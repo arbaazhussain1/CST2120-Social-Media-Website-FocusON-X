@@ -1,6 +1,6 @@
-body {
+/* body {
     background-color: blue;
-}
+} */
 
 /* .navbar {
     width: 400px;
@@ -36,6 +36,12 @@ body {
  }
 
 
+ /* creating logo / styling*/
+ .Logo img {
+    max-width: 100%;
+    height: auto; 
+    width: 500px;
+ }
 
  /* Add a color and style to the footer */
 footer {
