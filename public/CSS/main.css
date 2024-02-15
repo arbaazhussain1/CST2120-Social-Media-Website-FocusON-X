@@ -1,7 +1,12 @@
-body {
+html {
+    min-height: 100vh;
+    position: relative;
+  }
+  body {
+    margin: 0;
     background-color: gray;
-}
-
+    min-height: 100vh;
+  }
 /* .navbar {
     width: 400px;
 } */
@@ -59,10 +64,12 @@ footer {
 
 
 
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-   
+    background-position: center bottom;
+    background-size: cover;
 }
 
 h3 {
@@ -86,11 +93,16 @@ li {
     align-items: stretch;
     display: flex;
     width: 100%;
+    min-height: 85.5vh;
 }
 
+h-100 {
+    height: 100%!important;
+}
 #sidebar {
     max-width: 264px;
     min-width: 264px;
+    min-height: 100%;
     transition: all 0.35s ease-in-out;
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1111;
@@ -164,6 +176,7 @@ a.sidebar-link {
 }
 
 /* Responsive */
+
 
 @media (min-width:768px) {
     .content {
