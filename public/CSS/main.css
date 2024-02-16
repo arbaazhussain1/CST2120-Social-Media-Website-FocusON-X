@@ -4,12 +4,13 @@ html {
   }
   body {
     margin: 0;
-    background-color: gray;
+    background-color: black;
     min-height: 100vh;
   }
-/* .navbar {
-    width: 400px;
-} */
+/* navbar: Adding a color and style */
+.navbar {
+    background-image: linear-gradient(to right, Black, #0a0c8c, #57bbe6 );
+}
 
 
 /* Profile Picture */
@@ -48,9 +49,16 @@ html {
     width: 500px;
  }
 
+  /* creating logo / styling*/
+  .Logo-sidebar img {
+    max-width: 100%;
+    height: auto; 
+    width: 500px;
+ }
+
  /* Add a color and style to the footer */
 footer {
-  background-image: linear-gradient(to right, red, #0a0c8c);
+  background-image: linear-gradient(to right, gray, Black, #0a0c8c, #57bbe6 );
   overflow: hidden;
   position: absolute;
   bottom: 0;
