@@ -58,12 +58,17 @@ html {
 
  /* Add a color and style to the footer */
 footer {
-  background-image: linear-gradient(to right, gray, Black, #0a0c8c, #57bbe6 );
+  background-image: linear-gradient(to right, Black, #0a0c8c, #57bbe6 );
   overflow: hidden;
   position: absolute;
   bottom: 0;
   margin-top: 400px;
   width: 100%;
+}
+
+.navbar-toggler{
+    background-color: white;
+
 }
 
 
@@ -191,3 +196,61 @@ a.sidebar-link {
         width: auto;
     }
 }
+
+
+
+
+
+/* popupRegister styling */
+
+.popupRegister .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 7);
+    z-index: 1;
+}
+
+.popupRegister .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popupRegister .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.popupRegister.active .overlay {
+    display: block;
+}
+
+.popupRegister.active .content {
+    transform: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+

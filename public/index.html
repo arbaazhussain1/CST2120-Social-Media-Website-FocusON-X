@@ -46,9 +46,9 @@
   </head>
   <body>
     <!-- topNavbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="Logo" href="#">
+        <a class="Logo" href="#Home" id="Home" >
           <img src="Images/FocusON-X logo.png" alt="FocusON-X Logo"
         /></a>
         <button
@@ -65,7 +65,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#Home"
+                >Home</a
+              >
             </li>
             <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -103,24 +105,37 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="#"
-                    ><i class="fas fa-sliders-h fa-fw"></i> Register</a
+                  <a class="dropdown-item" href="#Register" id="Register">
+                    <i class="fas fa-sliders-h fa-fw"></i> Register</a
                   >
+
+                  <div class="popupRegister" id="popupRegister" display = "none";   >
+                    <div class="overlay"></div>
+                    <div class="contentRegister">
+                        <div class="close-btn">&times;</div>
+                    </div>
+                  </div>
+
+                  <button onclick="togglePopupRegister()">show popupRegister </button>
+
+
+
+
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#"
+                  <a class="dropdown-item" href="#Login-In" id="Login-In"
                     ><i class="fas fa-sliders-h fa-fw"></i> Login In</a
                   >
                 </li>
-              
+
                 <li>
-                  <a class="dropdown-item" href="#"
+                  <a class="dropdown-item" href="#Settings" id="Settings"
                     ><i class="fas fa-cog fa-fw"></i> Settings</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#"
+                  <a class="dropdown-item" href="#Log-Out" id="Log-Out"
                     ><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a
                   >
                 </li>
@@ -136,7 +151,7 @@
       <aside id="sidebar">
         <div class="h-100">
           <div class="sidebar-logo">
-            <a class="Logo-sidebar" href="#">
+            <a class="Logo-sidebar" href="#Home" id="Home" >
               <img src="Images/FocusON-X logo.png" alt="FocusON-X Logo"
             /></a>
           </div>
@@ -144,46 +159,42 @@
           <ul class="sidebar-nav">
             <!-- <li class="sidebar-header">Tools & Components</li> -->
             <li class="sidebar-item">
-              <a href="#" class="sidebar-link">
+              <a href="#Home" class="sidebar-link" id="Home">
                 <!-- <i class="fa-solid fa-list pe-2"></i> -->
                 Home
               </a>
             </li>
 
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                  <!-- <i class="fa-solid fa-list pe-2"></i> -->
-                  Search
-                </a>
-              </li>
+              <a href="#Search" class="sidebar-link" id="Search">
+                <!-- <i class="fa-solid fa-list pe-2"></i> -->
+                Search
+              </a>
+            </li>
 
-              <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                  <!-- <i class="fa-solid fa-list pe-2"></i> -->
-                  Messages
-                </a>
-              </li>
-              <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                  <!-- <i class="fa-solid fa-list pe-2"></i> -->
-                  Notifications
-                </a>
-              </li>
-              <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                  <!-- <i class="fa-solid fa-list pe-2"></i> -->
-                  Create
-                </a>
-              </li>
-              <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                  <!-- <i class="fa-solid fa-list pe-2"></i> -->
-                  Profile
-                </a>
-              </li>
-                  </ul>
-                </li>
-              </ul>
+            <li class="sidebar-item">
+              <a href="#Messages" class="sidebar-link" id="Messages">
+                <!-- <i class="fa-solid fa-list pe-2"></i> -->
+                Messages
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#Notifications" class="sidebar-link" id="Notifications">
+                <!-- <i class="fa-solid fa-list pe-2"></i> -->
+                Notifications
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#Create" class="sidebar-link" id="Create">
+                <!-- <i class="fa-solid fa-list pe-2"></i> -->
+                Create
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#Profile" class="sidebar-link" id="Profile">
+                <!-- <i class="fa-solid fa-list pe-2"></i> -->
+                Profile
+              </a>
             </li>
           </ul>
         </div>
@@ -216,40 +227,34 @@
       <!--Main content here -->
     </div>
 
-
     <!--Footer-->
-    <footer class="footer bg-dark text-white text-center">
+    <footer class="footer text-white text-center">
       <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h4 class="text-white">Collapsed content</h4>
-            <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
-          </div>
+          <!-- <div class=" "> -->
+          <h4 class="text-white">Collapsed content</h4>
+          <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
         </div>
-        <nav class="navbar ">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <p>
-            Created by Arbaaz Ali Hussain M00872279 &copy; . Contact:
-            <a href="ah2010@live.mdx.ac.uk" target="_blank">
-              Send me an Email
-            </a>
-            Middlesex University London. The Burroughs, NW4 4BT.
-            <a href="tel:02084115000"> Call MDX </a>
-          </p>
-        </nav>
       </div>
-
+      <nav class="navbar">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <p>
+          Created by Arbaaz Ali Hussain M00872279 &copy; . Contact:
+          <a href="ah2010@live.mdx.ac.uk" target="_blank"> Send me an Email </a>
+          Middlesex University London. The Burroughs, NW4 4BT.
+          <a href="tel:02084115000"> Call MDX </a>
+        </p>
+      </nav>
     </footer>
-
   </body>
 </html>

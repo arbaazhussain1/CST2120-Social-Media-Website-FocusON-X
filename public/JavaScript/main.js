@@ -1,3 +1,5 @@
+
+// narbar button 
 document.querySelectorAll('.dropdown-toggle').forEach(item => {
     item.addEventListener('click', event => {
    
@@ -14,10 +16,15 @@ document.querySelectorAll('.dropdown-toggle').forEach(item => {
   });
 
 
-  
-
-  
+  // sidebar button 
   function sidebar() {
  
       document.querySelector("#sidebar").classList.toggle("collapsed");
+};
+
+
+function togglePopupRegister() {
+
+  document.getElementById("popupRegister").classList.toggle("active");
+
 };
