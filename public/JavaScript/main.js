@@ -23,8 +23,60 @@ document.querySelectorAll('.dropdown-toggle').forEach(item => {
 };
 
 
-function togglePopupRegister() {
+// function togglePopupRegister() {
 
-  document.getElementById("popupRegister").classList.toggle("active");
+//   document.getElementById("popupRegister").classList.toggle("active");
 
-};
+// };
+
+const registerbutton = document.getElementById("register-btn");
+console.log(registerbutton);
+const togglePopupRegister = (e) => {
+  if (e.target === registerbutton) {
+
+    document.getElementById("overlay").style.display = "block";
+    document.getElementById("popupRegister").style.display = "block";
+
+  } else {
+
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("popupRegister").style.display = "none";
+  }
+ };
+
+// function togglePopupRegister(e) {
+//   if (e.target === registerbutton) {
+
+//     document.getElementById("overlay").style.display = "block";
+//     document.getElementById("popupRegister").style.display = "block";
+
+//   }
+
+// };
+
+registerbutton.addEventListener("click", togglePopupRegister);
+
+
+// 
+
+// <!-- A popup to create a new post box
+//     <div id="overlay" class="overlay" style="display:none;"></div>
+
+//     <div id="popupPost" style="display:none;">
+//         <h2>Create post</h2>
+//         <p>What's on your mind?</p>
+//         <button id="exitButton" onclick="exitPopup('popupPost')"> &times; </button>
+//         <button id="postButton" onclick=""> Post </button>
+//     </div>
+
+
+
+// function displayPopup(pageID) {
+//     document.getElementById("overlay").style.display = "block";
+//     document.getElementById(pageID).style.display = 'block';
+// }
+
+// function exitPopup(pageID) {
+//     document.getElementById("overlay").style.display = "none";
+//     document.getElementById(pageID).style.display = 'none';
+// };

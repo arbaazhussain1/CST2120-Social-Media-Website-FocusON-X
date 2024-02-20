@@ -213,7 +213,7 @@ a.sidebar-link {
     z-index: 1;
 }
 
-.popupRegister .content {
+.popupRegister .contentRegister {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -248,7 +248,7 @@ a.sidebar-link {
     display: block;
 }
 
-.popupRegister.active .content {
+.popupRegister.active .contentRegister {
     transform: all 300ms ease-in-out;
     transform: translate(-50%, -50%) scale(0);
 }
