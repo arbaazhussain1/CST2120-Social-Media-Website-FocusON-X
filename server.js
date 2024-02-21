@@ -20,15 +20,27 @@ const postsCollection = database.collection("posts");
 
 app.get(`/M00872279`, async (request, response) => {
   // Get data from MongoDB
-  const data = await postsCollection.find({}).toArray();
+  //const post = await postsCollection.find({}).toArray();
+  const user = await usersCollection.find({}).toArray();
 
-  console.log(data);
+ // console.log(post);
+  console.log(user);
 
-  //   const collection =database.collection("posts");
-  //   const collection =database.collection("users");
-
-  response.send(data);
+  //response.send(post);
+  response.send(user);
 });
+
+app.post(`/M00872279`, async (request, response) => {
+    // Get data from MongoDB
+    //const post = await postsCollection.find({}).toArray();
+    const result = await usersCollection.insertOne(request.body);
+  
+    console.log(result);
+  
+    //response.send(post);
+    response.send({"message": "Data saved"});
+  });
+  
 
 // async function main(){
 //     /**
@@ -59,6 +71,27 @@ app.get(`/M00872279`, async (request, response) => {
 //     databasesList.databases.forEach(db => console.log(` - ${db.name}`));
 // };
 
+
+
+//post request
+// app.post('/M00872279', (req, res) => {
+//     console.log(req.body);
+//     res.send({"message": " data recieved"});
+
+// });
+
+//get request
+// app.get('/M00872279', (req, res) => {
+//     res.send({"message": "  data retrieved"});
+// });
+
+
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+
+
+
