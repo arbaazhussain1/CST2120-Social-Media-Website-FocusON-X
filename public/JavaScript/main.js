@@ -46,6 +46,10 @@ document.querySelectorAll('.dropdown-toggle').forEach(item => {
 
 
 
+
+
+
+
 // document.addEventListener('DOMContentLoaded', function() {
 //   const registerbutton = document.getElementById('register-btn');
 //   const popup = document.getElementById('popupRegister');
