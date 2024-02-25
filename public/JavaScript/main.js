@@ -1,28 +1,20 @@
-
-// narbar button 
-document.querySelectorAll('.dropdown-toggle').forEach(item => {
-    item.addEventListener('click', event => {
-   
-      if(event.target.classList.contains('dropdown-toggle') ){
-        event.target.classList.toggle('toggle-change');
-      
-      }
-      else if(event.target.parentElement.classList.contains('dropdown-toggle')){
-        event.target.parentElement.classList.toggle('toggle-change');
-     
-
-      }
-    })
+// narbar button
+document.querySelectorAll(".dropdown-toggle").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    if (event.target.classList.contains("dropdown-toggle")) {
+      event.target.classList.toggle("toggle-change");
+    } else if (
+      event.target.parentElement.classList.contains("dropdown-toggle")
+    ) {
+      event.target.parentElement.classList.toggle("toggle-change");
+    }
   });
+});
 
-
-  // sidebar button 
-  function sidebar() {
- 
-      document.querySelector("#sidebar").classList.toggle("collapsed");
-};
-
-
+// sidebar button
+function sidebar() {
+  document.querySelector("#sidebar").classList.toggle("collapsed");
+}
 
 // const registerbutton = document.getElementById("register-btn");
 // console.log(registerbutton);
@@ -39,16 +31,7 @@ document.querySelectorAll('.dropdown-toggle').forEach(item => {
 //   }
 //  };
 
-
 // registerbutton.addEventListener("click", togglePopupRegister);
-
-
-
-
-
-
-
-
 
 // document.addEventListener('DOMContentLoaded', function() {
 //   const registerbutton = document.getElementById('register-btn');
