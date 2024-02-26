@@ -129,83 +129,117 @@
       </div>
     </nav>
 
-    <!-- Modal Pop Up for Register-->
-    <div
-      class="modal Register-modal"
-      id="modalRegister"
-      tabindex="-1"
-      aria-labelledby="modalRegisterLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalRegisterLabel">Register</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- Registration form goes here -->
-            <form>
-              <!-- Your registration form fields go here -->
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Register</button>
-          </div>
+   <!-- Modal Pop Up for Register-->
+<div class="modal Register-modal" id="modalRegister" tabindex="-1" aria-labelledby="modalRegisterLabel" aria-hidden="true">
+    <      <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title-Register" id="modalRegisterLabel">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Registration form -->
+          <form>
+            <!--User input for First Name text field -->
+            <div class="text_field-sign-up">
+              <input id="firstname" type="text" required />
+              <span></span>
+              <label>First Name</label>
+              <!--logo for First Name -->
+              <img class="usernameimage" src="../Images/profile.png" alt="First name logo" />
+            </div>
+            <!--User input for Last Name text field -->
+            <div class="text_field-sign-up">
+              <input id="lastname" type="text" required />
+              <span></span>
+              <label>Last Name</label>
+              <!--logo for Last Name -->
+              <img class="usernameimage" src="../Images/profile.png" alt="Last Name logo" />
+            </div>
+            <!--User input for Username text field -->
+            <div class="text_field-sign-up">
+              <input id="username" type="text" required />
+              <span></span>
+              <label>Username</label>
+              <!-- logo for Username-->
+              <img class="usernameimage" src="../Images/profile.png" alt="Username logo" />
+            </div>
+            <!--User input for Email text field -->
+            <div class="text_field-sign-up">
+              <input id="email" type="text" required />
+              <span></span>
+              <label>Email</label>
+              <!-- logo for Email-->
+              <img class="emailimage-sign-up" src="../Images/Email.png" alt="Email logo" />
+            </div>
+            <!--User input for Password text field -->
+            <div class="text_field-sign-up">
+              <input id="password" type="password" required />
+              <span></span>
+              <label>Password</label>
+              <!-- logo for Password-->
+              <img class="passwordlogo-sign-up" src="../Images/lock.png" alt="Lock logo" />
+            </div>
+            <div class="forgot-sign-up">
+              <!-- Created a checkbox for remembering the Users passwords -->
+              <label for="cb"><input type="checkbox" id="cb" />Remember Me </label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <!-- Submit button for Registration-->
+            <button type="button" class="btn btn-watch" onclick="registerVal()">Register</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-watch" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
+  
 
     <!-- Modal Pop Up for Login-in -->
-    <div
-      class="modal Login-in-modal"
-      id="modalLogin-In"
-      tabindex="-1"
-      aria-labelledby="modalLogin-inLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLogin-inLabel">Login-in</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- Registration form goes here -->
-            <form>
-              <!-- Your registration form fields go here -->
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Login-in</button>
-          </div>
+<div class="modal Login-in-modal" id="modalLogin-In" tabindex="-1" aria-labelledby="modalLogin-inLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title-Login-in" id="modalLogin-inLabel">Login-in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Login form -->
+          <form>
+            <!--User input for Username text field -->
+            <div class="text_field">
+              <input id="username" type="text" required />
+              <span></span>
+              <label>Username</label>
+              <!-- logo for ``username-->
+              <img class="usernameimage" src="../Images/profile.png" alt="username logo" />
+            </div>
+            <!--User input for Password text field -->
+            <div class="text_field">
+              <input id="password" type="password" required />
+              <span></span>
+              <label>Password</label>
+              <!-- logo for Password-->
+              <img class="passwordlogo" src="../Images/lock.png" alt="Lock logo" />
+            </div>
+            <div class="forgot">
+              <!-- Created a checkbox for remembering the Users passwords -->
+              <label for="cb"><input type="checkbox" id="cb" />Remember Me </label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <!-- Submit button for Login-->
+            <button type="button" class="btn btn-watch" onclick="loginVal()">Login-in</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-watch" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
+  
 
     <!-- Modal Pop Up for Settings-->
     <div
@@ -218,7 +252,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalSettingsLabel">Settings</h5>
+            <h1 class="modal-title-Setting" id="modalSettingsLabel">Settings</h1>
             <button
               type="button"
               class="btn-close"
