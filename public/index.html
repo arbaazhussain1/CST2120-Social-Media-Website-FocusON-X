@@ -241,45 +241,49 @@
   </div>
   
 
-    <!-- Modal Pop Up for Settings-->
-    <div
-      class="modal Settings-modal"
-      id="modalSettings"
-      tabindex="-1"
-      aria-labelledby="modalSettingsLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
+ <!-- Modal Pop Up for Settings-->
+<div class="modal Settings-modal" id="modalSettings" tabindex="-1" aria-labelledby="modalSettingsLabel" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title-Setting" id="modalSettingsLabel">Settings</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- Registration form goes here -->
-            <form>
-              <!-- Your registration form fields go here -->
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save Settings</button>
-          </div>
+            <div class="modal-header">
+                <h1 class="modal-title-Setting" id="modalSettingsLabel">Settings</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Text next to the switch button for audio -->
+                <h3 class="audio-text">Audio:</h3>
+                <!-- Switch button for audio -->
+                <label class="switch-button" for="switch">
+                    <div class="switch-outer">
+                        <input id="switch" type="checkbox">
+                        <div class="button">
+                            <span class="button-toggle"></span>
+                            <span class="button-indicator"></span>
+                        </div>
+                    </div>
+                </label>
+                <!-- Text next to the switch button for notifications -->
+                <h3 class="notifications-text">Notifications:</h3>
+                <!-- Switch button for notifications -->
+                <label class="switch-button" for="notifications-switch">
+                    <div class="switch-outer">
+                        <input id="notifications-switch" type="checkbox">
+                        <div class="button">
+                            <span class="button-toggle"></span>
+                            <span class="button-indicator"></span>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-watch" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-watch">Save Settings</button>
+            </div>
         </div>
-      </div>
     </div>
+</div>
 
+  
     <div class="wrapper">
       <!-- Sidebar -->
       <aside id="sidebar">
