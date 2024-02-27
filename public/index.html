@@ -129,161 +129,244 @@
       </div>
     </nav>
 
-   <!-- Modal Pop Up for Register-->
-<div class="modal Register-modal" id="modalRegister" tabindex="-1" aria-labelledby="modalRegisterLabel" aria-hidden="true">
-    <      <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title-Register" id="modalRegisterLabel">Register</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Registration form -->
-          <form>
-            <!--User input for First Name text field -->
-            <div class="text_field-sign-up">
-              <input id="firstname" type="text" required />
-              <span></span>
-              <label>First Name</label>
-              <!--logo for First Name -->
-              <img class="usernameimage" src="../Images/profile.png" alt="First name logo" />
-            </div>
-            <!--User input for Last Name text field -->
-            <div class="text_field-sign-up">
-              <input id="lastname" type="text" required />
-              <span></span>
-              <label>Last Name</label>
-              <!--logo for Last Name -->
-              <img class="usernameimage" src="../Images/profile.png" alt="Last Name logo" />
-            </div>
-            <!--User input for Username text field -->
-            <div class="text_field-sign-up">
-              <input id="username" type="text" required />
-              <span></span>
-              <label>Username</label>
-              <!-- logo for Username-->
-              <img class="usernameimage" src="../Images/profile.png" alt="Username logo" />
-            </div>
-            <!--User input for Email text field -->
-            <div class="text_field-sign-up">
-              <input id="email" type="text" required />
-              <span></span>
-              <label>Email</label>
-              <!-- logo for Email-->
-              <img class="emailimage-sign-up" src="../Images/Email.png" alt="Email logo" />
-            </div>
-            <!--User input for Password text field -->
-            <div class="text_field-sign-up">
-              <input id="password" type="password" required />
-              <span></span>
-              <label>Password</label>
-              <!-- logo for Password-->
-              <img class="passwordlogo-sign-up" src="../Images/lock.png" alt="Lock logo" />
-            </div>
-            <div class="forgot-sign-up">
-              <!-- Created a checkbox for remembering the Users passwords -->
-              <label for="cb"><input type="checkbox" id="cb" />Remember Me </label>
-            </div>
-            <div class="pass">Forgot Password?</div>
-            <!-- Submit button for Registration-->
-            <button type="button" class="btn btn-watch" onclick="registerVal()">Register</button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-watch" data-bs-dismiss="modal">Close</button>
+    <!-- Modal Pop Up for Register-->
+    <div
+      class="modal Register-modal"
+      id="modalRegister"
+      tabindex="-1"
+      aria-labelledby="modalRegisterLabel"
+      aria-hidden="true"
+    >
+      <
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title-Register" id="modalRegisterLabel">
+              Register
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Registration form -->
+            <form>
+              <!--User input for First Name text field -->
+              <div class="text_field-sign-up">
+                <input id="firstname" type="text" required />
+                <span></span>
+                <label>First Name</label>
+                <!--logo for First Name -->
+                <img
+                  class="usernameimage"
+                  src="../Images/profile.png"
+                  alt="First name logo"
+                />
+              </div>
+              <!--User input for Last Name text field -->
+              <div class="text_field-sign-up">
+                <input id="lastname" type="text" required />
+                <span></span>
+                <label>Last Name</label>
+                <!--logo for Last Name -->
+                <img
+                  class="usernameimage"
+                  src="../Images/profile.png"
+                  alt="Last Name logo"
+                />
+              </div>
+              <!--User input for Username text field -->
+              <div class="text_field-sign-up">
+                <input id="username" type="text" required />
+                <span></span>
+                <label>Username</label>
+                <!-- logo for Username-->
+                <img
+                  class="usernameimage"
+                  src="../Images/profile.png"
+                  alt="Username logo"
+                />
+              </div>
+              <!--User input for Email text field -->
+              <div class="text_field-sign-up">
+                <input id="email" type="text" required />
+                <span></span>
+                <label>Email</label>
+                <!-- logo for Email-->
+                <img
+                  class="emailimage-sign-up"
+                  src="../Images/Email.png"
+                  alt="Email logo"
+                />
+              </div>
+              <!--User input for Password text field -->
+              <div class="text_field-sign-up">
+                <input id="password" type="password" required />
+                <span></span>
+                <label>Password</label>
+                <!-- logo for Password-->
+                <img
+                  class="passwordlogo-sign-up"
+                  src="../Images/lock.png"
+                  alt="Lock logo"
+                />
+              </div>
+              <div class="forgot-sign-up">
+                <!-- Created a checkbox for remembering the Users passwords -->
+                <label for="cb"
+                  ><input type="checkbox" id="cb" />Remember Me
+                </label>
+              </div>
+              <div class="pass">Forgot Password?</div>
+              <!-- Submit button for Registration-->
+              <button
+                type="button"
+                class="btn btn-watch"
+                onclick="registerVal()"
+              >
+                Register
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
 
     <!-- Modal Pop Up for Login-in -->
-<div class="modal Login-in-modal" id="modalLogin-In" tabindex="-1" aria-labelledby="modalLogin-inLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title-Login-in" id="modalLogin-inLabel">Login-in</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Login form -->
-          <form>
-            <!--User input for Username text field -->
-            <div class="text_field">
-              <input id="username" type="text" required />
-              <span></span>
-              <label>Username</label>
-              <!-- logo for ``username-->
-              <img class="usernameimage" src="../Images/profile.png" alt="username logo" />
-            </div>
-            <!--User input for Password text field -->
-            <div class="text_field">
-              <input id="password" type="password" required />
-              <span></span>
-              <label>Password</label>
-              <!-- logo for Password-->
-              <img class="passwordlogo" src="../Images/lock.png" alt="Lock logo" />
-            </div>
-            <div class="forgot">
-              <!-- Created a checkbox for remembering the Users passwords -->
-              <label for="cb"><input type="checkbox" id="cb" />Remember Me </label>
-            </div>
-            <div class="pass">Forgot Password?</div>
-            <!-- Submit button for Login-->
-            <button type="button" class="btn btn-watch" onclick="loginVal()">Login-in</button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-watch" data-bs-dismiss="modal">Close</button>
+    <div
+      class="modal Login-in-modal"
+      id="modalLogin-In"
+      tabindex="-1"
+      aria-labelledby="modalLogin-inLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title-Login-in" id="modalLogin-inLabel">
+              Login-in
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Login form -->
+            <form>
+              <!--User input for Username text field -->
+              <div class="text_field">
+                <input id="username" type="text" required />
+                <span></span>
+                <label>Username</label>
+                <!-- logo for ``username-->
+                <img
+                  class="usernameimage"
+                  src="../Images/profile.png"
+                  alt="username logo"
+                />
+              </div>
+              <!--User input for Password text field -->
+              <div class="text_field">
+                <input id="password" type="password" required />
+                <span></span>
+                <label>Password</label>
+                <!-- logo for Password-->
+                <img
+                  class="passwordlogo"
+                  src="../Images/lock.png"
+                  alt="Lock logo"
+                />
+              </div>
+              <div class="forgot">
+                <!-- Created a checkbox for remembering the Users passwords -->
+                <label for="cb"
+                  ><input type="checkbox" id="cb" />Remember Me
+                </label>
+              </div>
+              <div class="pass">Forgot Password?</div>
+              <!-- Submit button for Login-->
+              <button type="button" class="btn btn-watch" onclick="loginVal()">
+                Login-in
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
 
- <!-- Modal Pop Up for Settings-->
-<div class="modal Settings-modal" id="modalSettings" tabindex="-1" aria-labelledby="modalSettingsLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <!-- Modal Pop Up for Settings-->
+    <div
+      class="modal Settings-modal"
+      id="modalSettings"
+      tabindex="-1"
+      aria-labelledby="modalSettingsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title-Setting" id="modalSettingsLabel">Settings</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Text next to the switch button for audio -->
-                <h3 class="audio-text">Audio:</h3>
-                <!-- Switch button for audio -->
-                <label class="switch-button" for="switch">
-                    <div class="switch-outer">
-                        <input id="switch" type="checkbox">
-                        <div class="button">
-                            <span class="button-toggle"></span>
-                            <span class="button-indicator"></span>
-                        </div>
-                    </div>
-                </label>
-                <!-- Text next to the switch button for notifications -->
-                <h3 class="notifications-text">Notifications:</h3>
-                <!-- Switch button for notifications -->
-                <label class="switch-button" for="notifications-switch">
-                    <div class="switch-outer">
-                        <input id="notifications-switch" type="checkbox">
-                        <div class="button">
-                            <span class="button-toggle"></span>
-                            <span class="button-indicator"></span>
-                        </div>
-                    </div>
-                </label>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-watch" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-watch">Save Settings</button>
-            </div>
+          <div class="modal-header">
+            <h1 class="modal-title-Setting" id="modalSettingsLabel">
+              Settings
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Text next to the switch button for audio -->
+            <h3 class="audio-text">Audio:</h3>
+            <!-- Switch button for audio -->
+            <label class="switch-button" for="switch">
+              <div class="switch-outer">
+                <input id="switch" type="checkbox" />
+                <div class="button">
+                  <span class="button-toggle"></span>
+                  <span class="button-indicator"></span>
+                </div>
+              </div>
+            </label>
+            <!-- Text next to the switch button for notifications -->
+            <h3 class="notifications-text">Notifications:</h3>
+            <!-- Switch button for notifications -->
+            <label class="switch-button" for="notifications-switch">
+              <div class="switch-outer">
+                <input id="notifications-switch" type="checkbox" />
+                <div class="button">
+                  <span class="button-toggle"></span>
+                  <span class="button-indicator"></span>
+                </div>
+              </div>
+            </label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-watch">Save Settings</button>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-  
     <div class="wrapper">
       <!-- Sidebar -->
       <aside id="sidebar">
@@ -391,15 +474,316 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
+
+        <!-- <main class="content px-3 py-2">
+            <div class="container-fluid">
+              <div class="mb-3">
+                <h3>Home</h3>
+                <div class="row">
+                   First Content Box -->
+        <!-- <div class="col-md-4 mb-3">
+                    <div class="content-box" onclick="openModal()">
+                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
+                      <h3>content 1</h3>
+                    </div>
+                  </div> -->
+        <!-- Second Content Box -->
+        <!-- <div class="col-md-4 mb-3">
+                    <div class="content-box" onclick="openModal()">
+                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
+                      <h3>content 2</h3>
+                    </div>
+                  </div> -->
+        <!-- Third Content Box -->
+        <!-- <div class="col-md-4 mb-3">
+                    <div class="content-box" onclick="openModal()">
+                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
+                      <h3>content 3</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row"> -->
+        <!-- Fourth Content Box -->
+        <!-- <div class="col-md-4 mb-3">
+                    <div class="content-box" onclick="openModal()">
+                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
+                      <h3>content 4</h3>
+                    </div>
+                  </div> -->
+        <!-- Fifth Content Box -->
+        <!-- <div class="col-md-4 mb-3">
+                    <div class="content-box" onclick="openModal()">
+                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
+                      <h3>content 5</h3>
+                    </div>
+                  </div> -->
+        <!-- Sixth Content Box -->
+        <!-- <div class="col-md-4 mb-3">
+                    <div class="content-box" onclick="openModal()">
+                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
+                      <h3>content 6</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main> -->
+
         <main class="content px-3 py-2">
           <div class="container-fluid">
-            <div class="mb-3">
-              <h3>Bootstrap Sidebar Tutorial</h3>
+            <h3>Home</h3>
+            <div class="row">
+              <div class="mb-3 col-md-4">
+                <div class="content-box" onclick="openModalContent()">
+                  <img
+                    class="content-box1"
+                    src="Images/Content1.jpg"
+                    alt="content-box logo"
+                  />
+                  <div class="paragraphContent">
+                    <p>Nowhere</p>
+                    <p>Created By: AH1</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3 col-md-4">
+                <div class="content-box" onclick="openModalContent2()">
+                  <video
+                    src="Video/Video1.mp4"
+                    type="video/mp4"
+                    preload="metadata"
+                    loop
+                    class="content-box1"
+                    muted
+                    onclick="this.paused ? this.play() : this.pause();"
+                  ></video>
+                  <div class="paragraphContent">
+                    <p>Greg Plitt: One Step Every Single Day</p>
+                    <p>Created By: GregPlitt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3 col-md-4">
+                <div class="content-box" onclick="openModalContent3()">
+                  <img
+                    class="content-box1"
+                    src="Images/Content2.jpg"
+                    alt="content-box logo"
+                  />
+                  <div class="paragraphContent">
+                    <p>TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU NEVER DID.</p>
+                    <p>Created By: Sam22</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+
+            <div class="row">
+                
+                    <div class="mb-3 col-md-4">
+                      <div class="content-box" onclick="openModalContent()">
+                        <img
+                          class="content-box1"
+                          src="Images/Content1.jpg"
+                          alt="content-box logo"
+                        />
+                        <div class="paragraphContent">
+                          <p>Nowhere</p>
+                          <p>Created By: AH1</p>
+                        </div>
+                      </div>
+                    </div>
+
+              <div class="mb-3 col-md-4">
+                <div class="content-box" onclick="openModalContent2()">
+                  <video
+                    src="Video/Video1.mp4"
+                    type="video/mp4"
+                    preload="metadata"
+                    loop
+                    class="content-box1"
+                    muted
+                    onclick="this.paused ? this.play() : this.pause();"
+                  ></video>
+                  <div class="paragraphContent">
+                    <p>Greg Plitt: One Step Every Single Day</p>
+                    <p>Created By: GregPlitt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3 col-md-4">
+                <div class="content-box" onclick="openModalContent3()">
+                  <img
+                    class="content-box1"
+                    src="Images/Content2.jpg"
+                    alt="content-box logo"
+                  />
+                  <div class="paragraphContent">
+                    <p>TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU NEVER DID.</p>
+                    <p>Created By: Sam22</p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </main>
       </div>
     </div>
+
+    <!-- Modal content -->
+    <div class="modal Content-modal" id="Modal-Content">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title-Content">
+              Nowhere
+            </h3>
+            <h3 class="modal-title-Content1-1">Created by: AH1</h3>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <!-- Image or Video -->
+            <img
+              src="Images/Content1.jpg"
+              alt="Modal Image"
+              class="img-fluid"
+            />
+
+             <!-- Like button -->
+  <label class="container">
+    <input type="checkbox">
+    <div class="checkmark">
+      <svg viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon">
+        <path d="M 24.10 6.29 Q 28.34 7.56 28.00 12.00 Q 27.56 15.10 27.13 18.19 A 0.45 0.45 4.5 0 0 27.57 18.70 Q 33.16 18.79 38.75 18.75 Q 42.13 18.97 43.23 21.45 Q 43.91 22.98 43.27 26.05 Q 40.33 40.08 40.19 40.44 Q 38.85 43.75 35.50 43.75 Q 21.75 43.75 7.29 43.75 A 1.03 1.02 0.0 0 1 6.26 42.73 L 6.42 19.43 A 0.54 0.51 -89.4 0 1 6.93 18.90 L 14.74 18.79 A 2.52 2.31 11.6 0 0 16.91 17.49 L 22.04 7.17 A 1.74 1.73 21.6 0 1 24.10 6.29 Z M 21.92 14.42 Q 20.76 16.58 19.74 18.79 Q 18.74 20.93 18.72 23.43 Q 18.65 31.75 18.92 40.06 A 0.52 0.52 88.9 0 0 19.44 40.56 L 35.51 40.50 A 1.87 1.83 5.9 0 0 37.33 39.05 L 40.51 23.94 Q 40.92 22.03 38.96 21.97 L 23.95 21.57 A 0.49 0.47 2.8 0 1 23.47 21.06 Q 23.76 17.64 25.00 12.00 Q 25.58 9.36 24.28 10.12 Q 23.80 10.40 23.50 11.09 Q 22.79 12.80 21.92 14.42 Z M 15.57 22.41 A 0.62 0.62 0 0 0 14.95 21.79 L 10.01 21.79 A 0.62 0.62 0 0 0 9.39 22.41 L 9.39 40.07 A 0.62 0.62 0 0 0 10.01 40.69 L 14.95 40.69 A 0.62 0.62 0 0 0 15.57 40.07 L 15.57 22.41 Z" fill-opacity="1.000"></path>
+        <circle r="1.51" cy="37.50" cx="12.49" fill-opacity="1.000"></circle>
+      </svg>
+    </div>
+    <p class="like">Liked!</p>
+  </label>
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+                Share
+              </button>
+
+
+              <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+                Save
+              </button>
+            <!-- Comment Section -->
+            <textarea
+              class="form-control mt-3"
+              placeholder="Write your comment here..."
+            ></textarea>
+          </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content 2 -->
+    <div class="modal Content2-modal" id="Modal-Content2">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title-Content2">
+              Greg Plitt: One Step Every Single Day
+            </h3>
+            <h3 class="modal-title-Content2-2">Created By: GregPlitt</h3>
+        
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <!-- Video with Poster Image -->
+            <div id="styled_video_container">
+              <!-- Video element with the poster set to the first frame of the video -->
+              <video
+                src="Video/Video1.mp4"
+                type="video/mp4"
+                controls
+                id="styled_video"
+                muted
+                preload="metadata"
+                loop
+                class="img-fluid"
+              ></video>
+            </div>
+            <!-- Comment Section -->
+            <textarea
+              class="form-control mt-3"
+              placeholder="Write your comment here..."
+            ></textarea>
+          </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Modal content 3 -->
+    <div class="modal Content3-modal" id="Modal-Content3">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h3 class="modal-title-Content">
+                TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU NEVER DID.
+              </h3>
+              <h3 class="modal-title-Content3-3">Created by: Sam22</h3>
+  
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+              <!-- Image or Video -->
+              <img
+                src="Images/Content2.jpg"
+                alt="Modal Image"
+                class="img-fluid"
+              />
+              <!-- Comment Section -->
+              <textarea
+                class="form-control mt-3"
+                placeholder="Write your comment here..."
+              ></textarea>
+            </div>
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Modal Pop Up for Search-->
     <div
@@ -412,7 +796,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalSearchLabel">Search</h5>
+            <h1 class="modal-title-Search" id="modalSearchLabel">Search</h1>
             <button
               type="button"
               class="btn-close"
@@ -457,7 +841,9 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalMessagesLabel">Messages</h5>
+            <h1 class="modal-title-Messages" id="modalMessagesLabel">
+              Messages
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -503,9 +889,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalNotificationsLabel">
+            <h1 class="modal-title-Notifications" id="modalNotificationsLabel">
               Notifications
-            </h5>
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -544,7 +930,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalCreateLabel">Create</h5>
+            <h1 class="modal-title-Create" id="modalCreateLabel">Create</h1>
             <button
               type="button"
               class="btn-close"
@@ -553,7 +939,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <!-- Registration form goes here -->
+            <!-- Create form goes here -->
             <form>
               <label for="file" class="custum-file-upload">
                 <div class="icon">
@@ -584,16 +970,25 @@
                 <input id="file" type="file" />
               </label>
             </form>
+
+            <form>
+              <div class="mb-3">
+                <label for="messageInput" class="form-label"
+                  >Description:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  rows="2"
+                ></textarea>
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-primary">Create</button>
+            <button type="button" class="btn btn-watch">Create ></button>
           </div>
         </div>
       </div>
@@ -611,7 +1006,7 @@
         <!-- Added modal-lg class here -->
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalProfileLabel">Profile</h5>
+            <h1 class="modal-title-Profile" id="modalProfileLabel">Profile</h1>
             <button
               type="button"
               class="btn-close"
@@ -697,7 +1092,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalSavedLabel">Saved</h5>
+            <h1 class="modal-title-Saved" id="modalSavedLabel">Saved</h1>
             <button
               type="button"
               class="btn-close"
