@@ -711,7 +711,7 @@ a.sidebar-link {
 /* Search Bar styling  */
 .modal-body .form-control.input {
   background-color: #212121;
-  max-width: 190px;
+  max-width: 200px;
   height: 40px;
   padding: 10px;
   border: 2px solid white;
@@ -1320,15 +1320,15 @@ input[type="button"]:hover {
 }
 
 .modal-header {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .modal-title-Content2-2 {
-    margin-top: 10px;
-    color: black;
-    margin: 0;
-  }
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title-Content2-2 {
+  margin-top: 10px;
+  color: black;
+  margin: 0;
+}
 
 .Content2-modal {
   display: none;
@@ -1368,66 +1368,63 @@ input[type="button"]:hover {
   color: #e74c3c;
 }
 
-
-
 /* Modal Styles for Pop up Content3 */
 .modal-title-Content3 {
-    color: black;
-  }
+  color: black;
+}
 
-  .modal-header {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .modal-title-Content3-3 {
-    margin-top: 10px;
-    color: black;
-    margin: 0;
-  }
-  
-  .Content3-modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .Content3-modal .modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    max-width: 1000px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .close {
-    color: black;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #e74c3c;
-  }
-  
+.modal-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title-Content3-3 {
+  margin-top: 10px;
+  color: black;
+  margin: 0;
+}
+
+.Content3-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Content3-modal .modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 1000px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #e74c3c;
+}
 
 /*  START Like button */
 
-  /* Hide the default checkbox */
+/* Hide the default checkbox */
 .container input {
   opacity: 0;
   cursor: pointer;
@@ -1453,7 +1450,7 @@ input[type="button"]:hover {
   width: 3em;
   background-color: #171717;
   border-radius: 10px;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
   z-index: 2;
 }
 
@@ -1468,7 +1465,7 @@ input[type="button"]:hover {
 .icon {
   margin: 0.2em;
   fill: white;
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .checkmark:hover {
@@ -1528,3 +1525,50 @@ input[type="button"]:hover {
 }
 
 /*  END Like button */
+
+/* Positioning the recent text */
+.recent-text {
+  position: absolute;
+  top: 100;
+  left: 0;
+}
+
+/* Positioning the clear list button */
+.btn-clear-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Positioning the user info box */
+.user-info-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 100px;  
+}
+
+/* Styling the profile picture */
+.profile-pic-search img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 20px; 
+}
+
+/* Styling the username */
+.username {
+  font-weight: bold;
+  margin-top: 20px; 
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .recent-text,
+  .btn-clear-list {
+    position: static;
+    margin-top: 10px; /* Adjust as needed */
+  }
+}

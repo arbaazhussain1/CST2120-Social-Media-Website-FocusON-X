@@ -47,22 +47,20 @@ function sidebar() {
 //   });
 // });
 
-
-
 // JavaScript function to openModalContent
 function openModalContent() {
-  var myModal = new bootstrap.Modal(document.getElementById('Modal-Content'));
+  var myModal = new bootstrap.Modal(document.getElementById("Modal-Content"));
   myModal.show();
 }
 
 // JavaScript function to openModalContent2
 function openModalContent2() {
-  var myModal = new bootstrap.Modal(document.getElementById('Modal-Content2'));
+  var myModal = new bootstrap.Modal(document.getElementById("Modal-Content2"));
   myModal.show();
 }
 
 // JavaScript function to openModalContent3
 function openModalContent3() {
-  var myModal = new bootstrap.Modal(document.getElementById('Modal-Content3'));
+  var myModal = new bootstrap.Modal(document.getElementById("Modal-Content3"));
   myModal.show();
 }
