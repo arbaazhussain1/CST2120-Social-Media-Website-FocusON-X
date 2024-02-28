@@ -19,27 +19,27 @@ const usersCollection = database.collection("users");
 const postsCollection = database.collection("posts");
 
 app.get(`/M00872279`, async (request, response) => {
-  // Get data from MongoDB
-  //const post = await postsCollection.find({}).toArray();
-  const user = await usersCollection.find({}).toArray();
-
- // console.log(post);
-  console.log(user);
-
-  //response.send(post);
-  response.send(user);
-});
-
-app.post(`/M00872279`, async (request, response) => {
-    // Get data from MongoDB
-    //const post = await postsCollection.find({}).toArray();
-    const result = await usersCollection.insertOne(request.body);
-  
-    console.log(result);
-  
-    //response.send(post);
-    response.send({"message": "Data saved"});
+    try {
+      const user = await usersCollection.find({}).toArray();
+      console.log(user);
+      response.send(user);
+    } catch (error) {
+      console.error(error);
+      response.status(500).send("An error occurred while fetching data");
+    }
   });
+  
+  app.post(`/M00872279`, async (request, response) => {
+    try {
+      const result = await usersCollection.insertOne(request.body);
+      console.log(result);
+      response.send({"message": "Data saved"});
+    } catch (error) {
+      console.error(error);
+      response.status(500).send("An error occurred while saving data");
+    }
+  });
+  
   
 
 // async function main(){
