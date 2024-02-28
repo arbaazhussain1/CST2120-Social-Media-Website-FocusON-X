@@ -16,36 +16,6 @@ function sidebar() {
   document.querySelector("#sidebar").classList.toggle("collapsed");
 }
 
-// const registerbutton = document.getElementById("register-btn");
-// console.log(registerbutton);
-// const togglePopupRegister = (e) => {
-//   if (e.target === registerbutton) {
-
-//     document.getElementById("overlay").style.display = "block";
-//     document.getElementById("popupRegister").style.display = "block";
-
-//   } else {
-
-//     document.getElementById("overlay").style.display = "none";
-//     document.getElementById("popupRegister").style.display = "none";
-//   }
-//  };
-
-// registerbutton.addEventListener("click", togglePopupRegister);
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   const registerbutton = document.getElementById('register-btn');
-//   const popup = document.getElementById('popupRegister');
-//   const closePopup = document.getElementById('close-btn');
-
-//   registerbutton.addEventListener('click', function() {
-//       popup.style.display = 'block';
-//   });
-
-//   closePopup.addEventListener('click', function() {
-//       popup.style.display = 'none';
-//   });
-// });
 
 // JavaScript function to openModalContent
 function openModalContent() {
