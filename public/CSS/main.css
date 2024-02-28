@@ -1260,6 +1260,11 @@ input[type="button"]:hover {
   color: white;
 }
 
+.content-box .paragraphContentblacktext {
+  margin: 0;
+  color: black;
+}
+
 /* Modal Styles for Pop up Content */
 .modal-title-Content {
   color: black;
@@ -1631,82 +1636,69 @@ input[type="button"]:hover {
 
 /* END Notifications selection content*/
 
-
-
 /* START Profile selection content*/
-
 
 /* Positioning the user info box */
 .user-info-box-Profile {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    width: 700px;
-    height: 100px;
-  }
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 700px;
+  height: 100px;
+}
 
-  /* Styling the profile picture */
+/* Styling the profile picture */
 .profile-pic-profile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-top: 20px;
-  }
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 20px;
+}
 
-  /* Styling the username */
+/* Styling the username */
 .username-profile {
-    font-weight: bold;
-    margin-top: 20px;
-    
-  }
+  font-weight: bold;
+  margin-top: 20px;
+}
 
-  .user-info-box-ProfileInput {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    width: 700px;
-    height: 100px;
-  }
+.user-info-box-ProfileInput {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 700px;
+  height: 100px;
+}
 
-  .post {
-    font-weight: bold;
-    margin-right: 50px;
-    
-  }
+.post {
+  font-weight: bold;
+  margin-right: 50px;
+}
 
-  .followers {
-    font-weight: bold;
-    margin-right: 50px;
-    
-  }
+.followers {
+  font-weight: bold;
+  margin-right: 50px;
+}
 
-  .following {
-    font-weight: bold;
-    margin-right: 50px;
-    
-  }
+.following {
+  font-weight: bold;
+  margin-right: 50px;
+}
 
+.profiledescription {
+  font-weight: bold;
+  width: 500px;
+}
+/* END Profile selection content*/
 
-  .profiledescription {
-    font-weight: bold;
-    width: 500px;    
-    
-  }
-  /* END Profile selection content*/
+/* START Messages selection content*/
 
+.user-info-box-Messages {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 720px;
+  height: 100px;
+}
 
-  /* START Messages selection content*/
-
-
-  .user-info-box-Messages {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    width: 720px;
-    height: 100px;
-  }
-
-
- 
-    /* END Messages selection content*/
+/* END Messages selection content*/
