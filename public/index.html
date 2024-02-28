@@ -42,13 +42,15 @@
   </head>
 
   <body>
-    <!-- topNavbar -->
+    <!-- This is a navigation bar component for a website topnav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <!-- Container fluid start -->
       <div class="container-fluid">
+        <!-- Logo and link to home page -->
         <a class="Logo" href="#Home" id="Home">
           <img src="Images/FocusON-X%20logo.png" alt="FocusON-X Logo" />
         </a>
+        <!-- Button for toggling navigation menu on smaller screens -->
         <button
           class="navbar-toggler"
           type="button"
@@ -60,16 +62,18 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- STart -->
+        <!-- Navigation links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left-aligned links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Placeholder for Home link -->
             <li class="nav-item">
-              <!-- <a class="nav-link active" aria-current="page" href="#Home"
-                >Home</a
-              > -->
+              <!-- <a class="nav-link active" aria-current="page" href="#Home">Home</a> -->
             </li>
           </ul>
+          <!-- Right-aligned links -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu">
+            <!-- Dropdown menu for user profile -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -79,6 +83,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
+                <!-- User profile picture -->
                 <div class="profile-pic">
                   <img
                     src="https://source.unsplash.com/250x250?girl"
@@ -86,7 +91,9 @@
                   />
                 </div>
               </a>
+              <!-- Dropdown menu items -->
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- Register link -->
                 <li>
                   <a
                     class="dropdown-item"
@@ -97,6 +104,7 @@
                     <i class="fas fa-sliders-h fa-fw"></i> Register
                   </a>
                 </li>
+                <!-- Login link -->
                 <li>
                   <a
                     class="dropdown-item"
@@ -107,6 +115,7 @@
                     <i class="fas fa-sliders-h fa-fw"></i> Login In</a
                   >
                 </li>
+                <!-- Settings link -->
                 <li>
                   <a
                     class="dropdown-item"
@@ -116,9 +125,11 @@
                     ><i class="fas fa-cog fa-fw"></i> Settings</a
                   >
                 </li>
+                <!-- Divider -->
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
+                <!-- Logout link -->
                 <li>
                   <a class="dropdown-item" href="#Log-Out"
                     ><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a
@@ -464,6 +475,7 @@
       </aside>
       <!-- Main Component -->
       <div class="main">
+        <!-- Navigation bar within the main component -->
         <nav class="navbar navbar-expand px-3 border-bottom">
           <!-- Button for sidebar toggle -->
           <button
@@ -475,27 +487,35 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
-
+        <!-- Main content area -->
         <main class="content px-3 py-2">
           <div class="container-fluid">
+            <!-- Title -->
             <h3>Home</h3>
+            <!-- Grid layout for content boxes -->
             <div class="row">
+              <!-- Content Box 1 -->
               <div class="mb-3 col-md-4">
+                <!-- Clickable content box triggering modal function -->
                 <div class="content-box" onclick="openModalContent()">
+                  <!-- Image -->
                   <img
                     class="content-box1"
                     src="Images/Content1.jpg"
                     alt="content-box logo"
                   />
+                  <!-- Content details -->
                   <div class="paragraphContent">
                     <p>Nowhere</p>
                     <p>Created By: AH1</p>
                   </div>
                 </div>
               </div>
-
+              <!-- Content Box 2 -->
               <div class="mb-3 col-md-4">
+                <!-- Clickable content box triggering modal function -->
                 <div class="content-box" onclick="openModalContent2()">
+                  <!-- Video -->
                   <video
                     src="Video/Video1.mp4"
                     preload="metadata"
@@ -504,20 +524,25 @@
                     muted
                     onclick="this.paused ? this.play() : this.pause();"
                   ></video>
+                  <!-- Content details -->
                   <div class="paragraphContent">
                     <p>Greg Plitt: One Step Every Single Day</p>
                     <p>Created By: GregPlitt</p>
                   </div>
                 </div>
               </div>
-
+            
+             <!-- Content Box 3 -->
               <div class="mb-3 col-md-4">
+                <!-- Clickable content box triggering modal function -->
                 <div class="content-box" onclick="openModalContent3()">
+                <!-- Image -->
                   <img
                     class="content-box1"
                     src="Images/Content2.jpg"
                     alt="content-box logo"
                   />
+                <!-- Content details -->
                   <div class="paragraphContent">
                     <p>
                       TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU
@@ -529,23 +554,30 @@
               </div>
             </div>
 
+      <!-- Second row of content boxes (same structure as the first row) -->
             <div class="row">
+              <!-- Content Box 4 -->
               <div class="mb-3 col-md-4">
+                <!-- Clickable content box triggering modal function -->
                 <div class="content-box" onclick="openModalContent()">
+                  <!-- Image -->
                   <img
                     class="content-box1"
                     src="Images/Content1.jpg"
                     alt="content-box logo"
                   />
+                  <!-- Content details -->
                   <div class="paragraphContent">
                     <p>Nowhere</p>
                     <p>Created By: AH1</p>
                   </div>
                 </div>
               </div>
-
+            <!-- Content Box 5 -->
               <div class="mb-3 col-md-4">
+                <!-- Clickable content box triggering modal function -->
                 <div class="content-box" onclick="openModalContent2()">
+                <!-- Video -->
                   <video
                     src="Video/Video1.mp4"
                     preload="metadata"
@@ -554,20 +586,24 @@
                     muted
                     onclick="this.paused ? this.play() : this.pause();"
                   ></video>
+                 <!-- Content details -->
                   <div class="paragraphContent">
                     <p>Greg Plitt: One Step Every Single Day</p>
                     <p>Created By: GregPlitt</p>
                   </div>
                 </div>
               </div>
-
+            <!-- Content Box 6 -->
               <div class="mb-3 col-md-4">
+             <!-- Clickable content box triggering modal function -->
                 <div class="content-box" onclick="openModalContent3()">
+                  <!-- Image -->
                   <img
                     class="content-box1"
                     src="Images/Content2.jpg"
                     alt="content-box logo"
                   />
+                     <!-- Content details -->
                   <div class="paragraphContent">
                     <p>
                       TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU
