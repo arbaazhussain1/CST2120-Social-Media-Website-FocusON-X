@@ -44,9 +44,10 @@
   <body>
     <!-- topNavbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- Container fluid start -->
       <div class="container-fluid">
         <a class="Logo" href="#Home" id="Home">
-          <img src="Images/FocusON-X logo.png" alt="FocusON-X Logo" />
+          <img src="Images/FocusON-X%20logo.png" alt="FocusON-X Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -59,6 +60,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- STart -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -137,7 +139,6 @@
       aria-labelledby="modalRegisterLabel"
       aria-hidden="true"
     >
-      <
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -204,7 +205,7 @@
               </div>
               <!--User input for Password text field -->
               <div class="text_field-sign-up">
-                <input id="password" type="password" required />
+                <input id="password_register" type="password" required />
                 <span></span>
                 <label>Password</label>
                 <!-- logo for Password-->
@@ -216,9 +217,9 @@
               </div>
               <div class="forgot-sign-up">
                 <!-- Created a checkbox for remembering the Users passwords -->
-                <label for="cb"
-                  ><input type="checkbox" id="cb" />Remember Me
-                </label>
+                <label for="cb_register"
+                  ><input type="checkbox" id="cb_register" />Remember Me</label
+                >
               </div>
               <div class="pass">Forgot Password?</div>
               <!-- Submit button for Registration-->
@@ -266,7 +267,7 @@
             <form>
               <!--User input for Username text field -->
               <div class="text_field">
-                <input id="username" type="text" required />
+                <input id="username_modal" type="text" required />
                 <span></span>
                 <label>Username</label>
                 <!-- logo for ``username-->
@@ -278,7 +279,7 @@
               </div>
               <!--User input for Password text field -->
               <div class="text_field">
-                <input id="password" type="password" required />
+                <input id="password_login" type="password" required />
                 <span></span>
                 <label>Password</label>
                 <!-- logo for Password-->
@@ -290,9 +291,9 @@
               </div>
               <div class="forgot">
                 <!-- Created a checkbox for remembering the Users passwords -->
-                <label for="cb"
-                  ><input type="checkbox" id="cb" />Remember Me
-                </label>
+                <label for="cb_login"
+                  ><input type="checkbox" id="cb_login" />Remember Me</label
+                >
               </div>
               <div class="pass">Forgot Password?</div>
               <!-- Submit button for Login-->
@@ -336,7 +337,7 @@
             <h3 class="audio-text">Audio:</h3>
             <!-- Switch button for audio -->
             <label class="switch-button" for="switch">
-              <div class="switch-outer">
+              <div class="switch-outer1">
                 <input id="switch" type="checkbox" />
                 <div class="button">
                   <span class="button-toggle"></span>
@@ -348,7 +349,7 @@
             <h3 class="notifications-text">Notifications:</h3>
             <!-- Switch button for notifications -->
             <label class="switch-button" for="notifications-switch">
-              <div class="switch-outer">
+              <div class="switch-outer2">
                 <input id="notifications-switch" type="checkbox" />
                 <div class="button">
                   <span class="button-toggle"></span>
@@ -367,20 +368,21 @@
       </div>
     </div>
 
+
     <div class="wrapper">
       <!-- Sidebar -->
       <aside id="sidebar">
         <div class="h-100">
           <div class="sidebar-logo">
-            <a class="Logo-sidebar" href="#Home" id="Home">
-              <img src="Images/FocusON-X logo.png" alt="FocusON-X Logo"
+            <a class="Logo-sidebar" href="#HomeSidebar" id="HomeSidebar">
+              <img src="Images/FocusON-X%20logo.png" alt="FocusON-X Logo"
             /></a>
           </div>
           <!-- Sidebar Navigation -->
           <ul class="sidebar-nav">
             <!-- <li class="sidebar-header">Tools & Components</li> -->
             <li class="sidebar-item">
-              <a href="#Home" class="sidebar-link" id="Home">
+              <a href="#Home" class="sidebar-link" id="HomeSidebar2">
                 <!-- <i class="fa-solid fa-list pe-2"></i> -->
                 <img src="Images/Home.png" alt="Home Logo" />
                 Home
@@ -475,60 +477,6 @@
           </button>
         </nav>
 
-        <!-- <main class="content px-3 py-2">
-            <div class="container-fluid">
-              <div class="mb-3">
-                <h3>Home</h3>
-                <div class="row">
-                   First Content Box -->
-        <!-- <div class="col-md-4 mb-3">
-                    <div class="content-box" onclick="openModal()">
-                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
-                      <h3>content 1</h3>
-                    </div>
-                  </div> -->
-        <!-- Second Content Box -->
-        <!-- <div class="col-md-4 mb-3">
-                    <div class="content-box" onclick="openModal()">
-                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
-                      <h3>content 2</h3>
-                    </div>
-                  </div> -->
-        <!-- Third Content Box -->
-        <!-- <div class="col-md-4 mb-3">
-                    <div class="content-box" onclick="openModal()">
-                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
-                      <h3>content 3</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="row"> -->
-        <!-- Fourth Content Box -->
-        <!-- <div class="col-md-4 mb-3">
-                    <div class="content-box" onclick="openModal()">
-                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
-                      <h3>content 4</h3>
-                    </div>
-                  </div> -->
-        <!-- Fifth Content Box -->
-        <!-- <div class="col-md-4 mb-3">
-                    <div class="content-box" onclick="openModal()">
-                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
-                      <h3>content 5</h3>
-                    </div>
-                  </div> -->
-        <!-- Sixth Content Box -->
-        <!-- <div class="col-md-4 mb-3">
-                    <div class="content-box" onclick="openModal()">
-                      <img class="content-box1" src="Images/PC.avif" alt="content-box logo" />
-                      <h3>content 6</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </main> -->
-
         <main class="content px-3 py-2">
           <div class="container-fluid">
             <h3>Home</h3>
@@ -551,7 +499,6 @@
                 <div class="content-box" onclick="openModalContent2()">
                   <video
                     src="Video/Video1.mp4"
-                    type="video/mp4"
                     preload="metadata"
                     loop
                     class="content-box1"
@@ -573,7 +520,10 @@
                     alt="content-box logo"
                   />
                   <div class="paragraphContent">
-                    <p>TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU NEVER DID.</p>
+                    <p>
+                      TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU
+                      NEVER DID.
+                    </p>
                     <p>Created By: Sam22</p>
                   </div>
                 </div>
@@ -581,26 +531,24 @@
             </div>
 
             <div class="row">
-                
-                    <div class="mb-3 col-md-4">
-                      <div class="content-box" onclick="openModalContent()">
-                        <img
-                          class="content-box1"
-                          src="Images/Content1.jpg"
-                          alt="content-box logo"
-                        />
-                        <div class="paragraphContent">
-                          <p>Nowhere</p>
-                          <p>Created By: AH1</p>
-                        </div>
-                      </div>
-                    </div>
+              <div class="mb-3 col-md-4">
+                <div class="content-box" onclick="openModalContent()">
+                  <img
+                    class="content-box1"
+                    src="Images/Content1.jpg"
+                    alt="content-box logo"
+                  />
+                  <div class="paragraphContent">
+                    <p>Nowhere</p>
+                    <p>Created By: AH1</p>
+                  </div>
+                </div>
+              </div>
 
               <div class="mb-3 col-md-4">
                 <div class="content-box" onclick="openModalContent2()">
                   <video
                     src="Video/Video1.mp4"
-                    type="video/mp4"
                     preload="metadata"
                     loop
                     class="content-box1"
@@ -622,12 +570,16 @@
                     alt="content-box logo"
                   />
                   <div class="paragraphContent">
-                    <p>TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU NEVER DID.</p>
+                    <p>
+                      TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU
+                      NEVER DID.
+                    </p>
                     <p>Created By: Sam22</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </main>
       </div>
     </div>
@@ -638,9 +590,7 @@
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
-            <h3 class="modal-title-Content">
-              Nowhere
-            </h3>
+            <h3 class="modal-title-Content">Nowhere</h3>
             <h3 class="modal-title-Content1-1">Created by: AH1</h3>
 
             <button
@@ -659,32 +609,45 @@
             />
 
              <!-- Like button -->
-  <label class="container">
-    <input type="checkbox">
-    <div class="checkmark">
-      <svg viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon">
-        <path d="M 24.10 6.29 Q 28.34 7.56 28.00 12.00 Q 27.56 15.10 27.13 18.19 A 0.45 0.45 4.5 0 0 27.57 18.70 Q 33.16 18.79 38.75 18.75 Q 42.13 18.97 43.23 21.45 Q 43.91 22.98 43.27 26.05 Q 40.33 40.08 40.19 40.44 Q 38.85 43.75 35.50 43.75 Q 21.75 43.75 7.29 43.75 A 1.03 1.02 0.0 0 1 6.26 42.73 L 6.42 19.43 A 0.54 0.51 -89.4 0 1 6.93 18.90 L 14.74 18.79 A 2.52 2.31 11.6 0 0 16.91 17.49 L 22.04 7.17 A 1.74 1.73 21.6 0 1 24.10 6.29 Z M 21.92 14.42 Q 20.76 16.58 19.74 18.79 Q 18.74 20.93 18.72 23.43 Q 18.65 31.75 18.92 40.06 A 0.52 0.52 88.9 0 0 19.44 40.56 L 35.51 40.50 A 1.87 1.83 5.9 0 0 37.33 39.05 L 40.51 23.94 Q 40.92 22.03 38.96 21.97 L 23.95 21.57 A 0.49 0.47 2.8 0 1 23.47 21.06 Q 23.76 17.64 25.00 12.00 Q 25.58 9.36 24.28 10.12 Q 23.80 10.40 23.50 11.09 Q 22.79 12.80 21.92 14.42 Z M 15.57 22.41 A 0.62 0.62 0 0 0 14.95 21.79 L 10.01 21.79 A 0.62 0.62 0 0 0 9.39 22.41 L 9.39 40.07 A 0.62 0.62 0 0 0 10.01 40.69 L 14.95 40.69 A 0.62 0.62 0 0 0 15.57 40.07 L 15.57 22.41 Z" fill-opacity="1.000"></path>
-        <circle r="1.51" cy="37.50" cx="12.49" fill-opacity="1.000"></circle>
-      </svg>
-    </div>
-    <p class="like">Liked!</p>
-  </label>
-  
+             <label class="container">
+                <input type="checkbox" />
+                <div class="checkmark">
+                  <svg
+                    viewBox="0 0 50 50"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                  >
+                    <path
+                      d="M 24.10 6.29 Q 28.34 7.56 28.00 12.00 Q 27.56 15.10 27.13 18.19 A 0.45 0.45 4.5 0 0 27.57 18.70 Q 33.16 18.79 38.75 18.75 Q 42.13 18.97 43.23 21.45 Q 43.91 22.98 43.27 26.05 Q 40.33 40.08 40.19 40.44 Q 38.85 43.75 35.50 43.75 Q 21.75 43.75 7.29 43.75 A 1.03 1.02 0.0 0 1 6.26 42.73 L 6.42 19.43 A 0.54 0.51 -89.4 0 1 6.93 18.90 L 14.74 18.79 A 2.52 2.31 11.6 0 0 16.91 17.49 L 22.04 7.17 A 1.74 1.73 21.6 0 1 24.10 6.29 Z M 21.92 14.42 Q 20.76 16.58 19.74 18.79 Q 18.74 20.93 18.72 23.43 Q 18.65 31.75 18.92 40.06 A 0.52 0.52 88.9 0 0 19.44 40.56 L 35.51 40.50 A 1.87 1.83 5.9 0 0 37.33 39.05 L 40.51 23.94 Q 40.92 22.03 38.96 21.97 L 23.95 21.57 A 0.49 0.47 2.8 0 1 23.47 21.06 Q 23.76 17.64 25.00 12.00 Q 25.58 9.36 24.28 10.12 Q 23.80 10.40 23.50 11.09 Q 22.79 12.80 21.92 14.42 Z M 15.57 22.41 A 0.62 0.62 0 0 0 14.95 21.79 L 10.01 21.79 A 0.62 0.62 0 0 0 9.39 22.41 L 9.39 40.07 A 0.62 0.62 0 0 0 10.01 40.69 L 14.95 40.69 A 0.62 0.62 0 0 0 15.57 40.07 L 15.57 22.41 Z"
+                      fill-opacity="1.000"
+                    ></path>
+                    <circle
+                      r="1.51"
+                      cy="37.50"
+                      cx="12.49"
+                      fill-opacity="1.000"
+                    ></circle>
+                  </svg>
+                </div>
+                <p class="like">Liked!</p>
+              </label>
+
             <!-- Share button -->
             <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
-                Share
-              </button>
+              Share
+            </button>
             <!-- Save button -->
-              <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
-                Save
-              </button>
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+              Save
+            </button>
             <!-- Comment Section -->
             <textarea
               class="form-control mt-3"
               placeholder="Write your comment here..."
             ></textarea>
           </div>
-          
+
           <!-- Modal Footer -->
           <div class="modal-footer">
             <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
@@ -705,7 +668,7 @@
               Greg Plitt: One Step Every Single Day
             </h3>
             <h3 class="modal-title-Content2-2">Created By: GregPlitt</h3>
-        
+
             <button
               type="button"
               class="btn-close"
@@ -718,36 +681,48 @@
             <div id="styled_video_container">
               <!-- Video element with the poster set to the first frame of the video -->
               <video
-                src="Video/Video1.mp4"
-                type="video/mp4"
-                controls
-                id="styled_video"
-                muted
-                preload="metadata"
-                loop
-                class="img-fluid"
-              ></video>
+              src="Video/Video1.mp4"
+              controls
+              id="styled_video"
+              muted
+              preload="metadata"
+              loop
+              class="img-fluid"
+            ></video>
             </div>
 
-             <!-- Like button -->
-  <label class="container">
-    <input type="checkbox"> 
-    <div class="checkmark">
-      <svg viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon">
-        <path d="M 24.10 6.29 Q 28.34 7.56 28.00 12.00 Q 27.56 15.10 27.13 18.19 A 0.45 0.45 4.5 0 0 27.57 18.70 Q 33.16 18.79 38.75 18.75 Q 42.13 18.97 43.23 21.45 Q 43.91 22.98 43.27 26.05 Q 40.33 40.08 40.19 40.44 Q 38.85 43.75 35.50 43.75 Q 21.75 43.75 7.29 43.75 A 1.03 1.02 0.0 0 1 6.26 42.73 L 6.42 19.43 A 0.54 0.51 -89.4 0 1 6.93 18.90 L 14.74 18.79 A 2.52 2.31 11.6 0 0 16.91 17.49 L 22.04 7.17 A 1.74 1.73 21.6 0 1 24.10 6.29 Z M 21.92 14.42 Q 20.76 16.58 19.74 18.79 Q 18.74 20.93 18.72 23.43 Q 18.65 31.75 18.92 40.06 A 0.52 0.52 88.9 0 0 19.44 40.56 L 35.51 40.50 A 1.87 1.83 5.9 0 0 37.33 39.05 L 40.51 23.94 Q 40.92 22.03 38.96 21.97 L 23.95 21.57 A 0.49 0.47 2.8 0 1 23.47 21.06 Q 23.76 17.64 25.00 12.00 Q 25.58 9.36 24.28 10.12 Q 23.80 10.40 23.50 11.09 Q 22.79 12.80 21.92 14.42 Z M 15.57 22.41 A 0.62 0.62 0 0 0 14.95 21.79 L 10.01 21.79 A 0.62 0.62 0 0 0 9.39 22.41 L 9.39 40.07 A 0.62 0.62 0 0 0 10.01 40.69 L 14.95 40.69 A 0.62 0.62 0 0 0 15.57 40.07 L 15.57 22.41 Z" fill-opacity="1.000"></path>
-        <circle r="1.51" cy="37.50" cx="12.49" fill-opacity="1.000"></circle>
-      </svg>
-    </div>
-    <p class="like">Liked!</p>
-  </label>
+            <!-- Like button -->
+            <label class="container">
+              <input type="checkbox" />
+              <div class="checkmark">
+                <svg
+                  viewBox="0 0 50 50"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon"
+                >
+                  <path
+                    d="M 24.10 6.29 Q 28.34 7.56 28.00 12.00 Q 27.56 15.10 27.13 18.19 A 0.45 0.45 4.5 0 0 27.57 18.70 Q 33.16 18.79 38.75 18.75 Q 42.13 18.97 43.23 21.45 Q 43.91 22.98 43.27 26.05 Q 40.33 40.08 40.19 40.44 Q 38.85 43.75 35.50 43.75 Q 21.75 43.75 7.29 43.75 A 1.03 1.02 0.0 0 1 6.26 42.73 L 6.42 19.43 A 0.54 0.51 -89.4 0 1 6.93 18.90 L 14.74 18.79 A 2.52 2.31 11.6 0 0 16.91 17.49 L 22.04 7.17 A 1.74 1.73 21.6 0 1 24.10 6.29 Z M 21.92 14.42 Q 20.76 16.58 19.74 18.79 Q 18.74 20.93 18.72 23.43 Q 18.65 31.75 18.92 40.06 A 0.52 0.52 88.9 0 0 19.44 40.56 L 35.51 40.50 A 1.87 1.83 5.9 0 0 37.33 39.05 L 40.51 23.94 Q 40.92 22.03 38.96 21.97 L 23.95 21.57 A 0.49 0.47 2.8 0 1 23.47 21.06 Q 23.76 17.64 25.00 12.00 Q 25.58 9.36 24.28 10.12 Q 23.80 10.40 23.50 11.09 Q 22.79 12.80 21.92 14.42 Z M 15.57 22.41 A 0.62 0.62 0 0 0 14.95 21.79 L 10.01 21.79 A 0.62 0.62 0 0 0 9.39 22.41 L 9.39 40.07 A 0.62 0.62 0 0 0 10.01 40.69 L 14.95 40.69 A 0.62 0.62 0 0 0 15.57 40.07 L 15.57 22.41 Z"
+                    fill-opacity="1.000"
+                  ></path>
+                  <circle
+                    r="1.51"
+                    cy="37.50"
+                    cx="12.49"
+                    fill-opacity="1.000"
+                  ></circle>
+                </svg>
+              </div>
+              <p class="like">Liked!</p>
+            </label>
             <!-- Share button -->
             <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
-                Share
-              </button>
+              Share
+            </button>
             <!-- Save button -->
-              <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
-                Save
-              </button>
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+              Save
+            </button>
             <!-- Comment Section -->
             <textarea
               class="form-control mt-3"
@@ -763,69 +738,80 @@
         </div>
       </div>
     </div>
-    
-
-
 
     <!-- Modal content 3 -->
     <div class="modal Content3-modal" id="Modal-Content3">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h3 class="modal-title-Content">
-                TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU NEVER DID.
-              </h3>
-              <h3 class="modal-title-Content3-3">Created by: Sam22</h3>
-  
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-              ></button>
-            </div>
-            <!-- Modal Body -->
-            <div class="modal-body">
-              <!-- Image or Video -->
-              <img
-                src="Images/Content2.jpg"
-                alt="Modal Image"
-                class="img-fluid"
-              />
-               <!-- Like button -->
-  <label class="container">
-    <input type="checkbox">
-    <div class="checkmark">
-      <svg viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon">
-        <path d="M 24.10 6.29 Q 28.34 7.56 28.00 12.00 Q 27.56 15.10 27.13 18.19 A 0.45 0.45 4.5 0 0 27.57 18.70 Q 33.16 18.79 38.75 18.75 Q 42.13 18.97 43.23 21.45 Q 43.91 22.98 43.27 26.05 Q 40.33 40.08 40.19 40.44 Q 38.85 43.75 35.50 43.75 Q 21.75 43.75 7.29 43.75 A 1.03 1.02 0.0 0 1 6.26 42.73 L 6.42 19.43 A 0.54 0.51 -89.4 0 1 6.93 18.90 L 14.74 18.79 A 2.52 2.31 11.6 0 0 16.91 17.49 L 22.04 7.17 A 1.74 1.73 21.6 0 1 24.10 6.29 Z M 21.92 14.42 Q 20.76 16.58 19.74 18.79 Q 18.74 20.93 18.72 23.43 Q 18.65 31.75 18.92 40.06 A 0.52 0.52 88.9 0 0 19.44 40.56 L 35.51 40.50 A 1.87 1.83 5.9 0 0 37.33 39.05 L 40.51 23.94 Q 40.92 22.03 38.96 21.97 L 23.95 21.57 A 0.49 0.47 2.8 0 1 23.47 21.06 Q 23.76 17.64 25.00 12.00 Q 25.58 9.36 24.28 10.12 Q 23.80 10.40 23.50 11.09 Q 22.79 12.80 21.92 14.42 Z M 15.57 22.41 A 0.62 0.62 0 0 0 14.95 21.79 L 10.01 21.79 A 0.62 0.62 0 0 0 9.39 22.41 L 9.39 40.07 A 0.62 0.62 0 0 0 10.01 40.69 L 14.95 40.69 A 0.62 0.62 0 0 0 15.57 40.07 L 15.57 22.41 Z" fill-opacity="1.000"></path>
-        <circle r="1.51" cy="37.50" cx="12.49" fill-opacity="1.000"></circle>
-      </svg>
-    </div>
-    <p class="like">Liked!</p>
-  </label>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h3 class="modal-title-Content">
+              TO GET SOMETHING YOU NEVER HAD, YOU MUST DO SOMETHING YOU NEVER
+              DID.
+            </h3>
+            <h3 class="modal-title-Content3-3">Created by: Sam22</h3>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <!-- Image or Video -->
+            <img
+              src="Images/Content2.jpg"
+              alt="Modal Image"
+              class="img-fluid"
+            />
+            <!-- Like button -->
+            <label class="container">
+              <input type="checkbox" />
+              <div class="checkmark">
+                <svg
+                  viewBox="0 0 50 50"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon"
+                >
+                  <path
+                    d="M 24.10 6.29 Q 28.34 7.56 28.00 12.00 Q 27.56 15.10 27.13 18.19 A 0.45 0.45 4.5 0 0 27.57 18.70 Q 33.16 18.79 38.75 18.75 Q 42.13 18.97 43.23 21.45 Q 43.91 22.98 43.27 26.05 Q 40.33 40.08 40.19 40.44 Q 38.85 43.75 35.50 43.75 Q 21.75 43.75 7.29 43.75 A 1.03 1.02 0.0 0 1 6.26 42.73 L 6.42 19.43 A 0.54 0.51 -89.4 0 1 6.93 18.90 L 14.74 18.79 A 2.52 2.31 11.6 0 0 16.91 17.49 L 22.04 7.17 A 1.74 1.73 21.6 0 1 24.10 6.29 Z M 21.92 14.42 Q 20.76 16.58 19.74 18.79 Q 18.74 20.93 18.72 23.43 Q 18.65 31.75 18.92 40.06 A 0.52 0.52 88.9 0 0 19.44 40.56 L 35.51 40.50 A 1.87 1.83 5.9 0 0 37.33 39.05 L 40.51 23.94 Q 40.92 22.03 38.96 21.97 L 23.95 21.57 A 0.49 0.47 2.8 0 1 23.47 21.06 Q 23.76 17.64 25.00 12.00 Q 25.58 9.36 24.28 10.12 Q 23.80 10.40 23.50 11.09 Q 22.79 12.80 21.92 14.42 Z M 15.57 22.41 A 0.62 0.62 0 0 0 14.95 21.79 L 10.01 21.79 A 0.62 0.62 0 0 0 9.39 22.41 L 9.39 40.07 A 0.62 0.62 0 0 0 10.01 40.69 L 14.95 40.69 A 0.62 0.62 0 0 0 15.57 40.07 L 15.57 22.41 Z"
+                    fill-opacity="1.000"
+                  ></path>
+                  <circle
+                    r="1.51"
+                    cy="37.50"
+                    cx="12.49"
+                    fill-opacity="1.000"
+                  ></circle>
+                </svg>
+              </div>
+              <p class="like">Liked!</p>
+            </label>
             <!-- Share button -->
             <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
-                Share
-              </button>
+              Share
+            </button>
             <!-- Save button -->
-              <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
-                Save
-              </button>
-              <!-- Comment Section -->
-              <textarea
-                class="form-control mt-3"
-                placeholder="Write your comment here..."
-              ></textarea>
-            </div>
-            <!-- Modal Footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
-                Close
-              </button>
-            </div>
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+              Save
+            </button>
+            <!-- Comment Section -->
+            <textarea
+              class="form-control mt-3"
+              placeholder="Write your comment here..."
+            ></textarea>
+          </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
     <!-- Modal Pop Up for Search-->
     <div
@@ -849,117 +835,116 @@
           <div class="modal-body">
             
 
-            
-            
             <form class="d-flex">
-              <input
-                placeholder="Enter your text..."
-                class="form-control me-2 input"
-                name="text"
-                type="text"
-              />
-              <button class="btn btn-watch" type="button">Search</button>
-            </form>
-            <span class="recent-text">Recent</span>
-            <div class="recent-section">
-                <button class="btn btn-clear-list">Clear List</button>
-                
-
+                <input
+                  placeholder="Enter your text..."
+                  class="form-control me-2 input"
+                  name="text"
+                  type="text"
+                />
+                <button class="btn btn-watch" type="button">Search</button>
+              </form>
+              <span class="recent-text">Recent</span>
+              <div class="recent-section">
+                  <button class="btn btn-clear-list">Clear List</button>
+                  
+  
+            </div>
+            <div class="user-info-box">
+              <div class="profile-pic-search">
+                  <img
+                    src="https://source.unsplash.com/250x250?girl"
+                    alt="Profile Picture"
+                  />
+                </div>
+              <span class="username">AH1</span>
           </div>
+  
           <div class="user-info-box">
-            <div class="profile-pic-search">
-                <img
-                  src="https://source.unsplash.com/250x250?girl"
-                  alt="Profile Picture"
-                />
-              </div>
-            <span class="username">AH1</span>
-        </div>
-
-        <div class="user-info-box">
-            <div class="profile-pic-search">
-                <img
-                  src="https://source.unsplash.com/250x250?girl"
-                  alt="Profile Picture"
-                />
-              </div>
-            <span class="username">GregPlitt</span>
-        </div>
-       
-
-        <div class="user-info-box">
-            <div class="profile-pic-search">
-                <img
-                  src="https://source.unsplash.com/250x250?girl"
-                  alt="Profile Picture"
-                />
-              </div>
-            <span class="username">Sam22</span>
-        </div>
-
-        </div>
-
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-watch"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            
+              <div class="profile-pic-search">
+                  <img
+                    src="https://source.unsplash.com/250x250?girl"
+                    alt="Profile Picture"
+                    />
+                </div>
+              <span class="username">GregPlitt</span>
+          </div>
+         
+  
+          <div class="user-info-box">
+              <div class="profile-pic-search">
+                  <img
+                    src="https://source.unsplash.com/250x250?girl"
+                    alt="Profile Picture"
+                  />
+                </div>
+              <span class="username">Sam22</span>
+          </div>
+  
+          </div>
+  
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-watch"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              
+            </div>
           </div>
         </div>
       </div>
-    </div>
+        
 
     <!-- Modal Pop Up for Messages -->
-    <div
-      class="modal Messages-modal"
-      id="modalMessages"
-      tabindex="-1"
-      aria-labelledby="modalMessagesLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title-Messages" id="modalMessagesLabel">
-              Messages
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <!-- Registration form -->
-            <form>
-              <div class="mb-3">
-                <label for="messageInput" class="form-label">Message:</label>
-                <textarea
-                  class="form-control"
-                  id="messageInput"
-                  rows="4"
-                ></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Send</button>
-          </div>
-        </div>
-      </div>
+<div
+class="modal Messages-modal"
+id="modalMessages"
+tabindex="-1"
+aria-labelledby="modalMessagesLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title-Messages" id="modalMessagesLabel">
+        Messages
+      </h1>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
     </div>
+    <div class="modal-body">
+      <!-- Registration form -->
+      <form>
+        <div class="mb-3">
+          <label for="messageInput" class="form-label">Message:</label>
+          <textarea
+            class="form-control"
+            id="messageInput"
+            rows="4"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-dismiss="modal"
+      >
+        Close
+      </button>
+      <button type="button" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</div>
+</div>
 
     <!-- Modal Pop Up for Notifications-->
     <div
@@ -985,18 +970,45 @@
           <div class="modal-body">
             <!-- Registration form goes here -->
             <form>
-              <!-- Your registration form fields go here -->
+              <span class="recent-text">Recent</span>
+              <div class="recent-section">
+                <button class="btn btn-clear-list">Clear List</button>
+              </div>
+              <div class="user-info-box">
+                <div class="profile-pic-Notifications">
+                  <img
+                    src="https://source.unsplash.com/250x250?girl"
+                    alt="Profile Picture"
+                  />
+                </div>
+                <span class="username">AH1</span>
+              </div>
+
+              <div class="user-info-box">
+                <div class="profile-pic-Notifications">
+                  <img
+                    src="https://source.unsplash.com/250x250?girl"
+                    alt="Profile Picture"
+                  />
+                </div>
+                <span class="username">GregPlitt</span>
+              </div>
+
+              <div class="user-info-box">
+                <div class="profile-pic-Notifications">
+                  <img
+                    src="https://source.unsplash.com/250x250?girl"
+                    alt="Profile Picture"
+                  />
+                </div>
+                <span class="username">Sam22</span>
+              </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-primary">Notifications</button>
           </div>
         </div>
       </div>

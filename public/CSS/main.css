@@ -433,7 +433,7 @@ a.sidebar-link {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  max-width: 7000px;
+  max-width: 500px;
   text-align: center;
   position: relative;
 }
@@ -1526,6 +1526,8 @@ input[type="button"]:hover {
 
 /*  END Like button */
 
+/* START Search selection content*/
+
 /* Positioning the recent text */
 .recent-text {
   position: absolute;
@@ -1546,7 +1548,7 @@ input[type="button"]:hover {
   align-items: center;
   border: 1px solid #ccc;
   width: 400px;
-  height: 100px;  
+  height: 100px;
 }
 
 /* Styling the profile picture */
@@ -1555,13 +1557,13 @@ input[type="button"]:hover {
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 /* Styling the username */
 .username {
   font-weight: bold;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 /* Adjustments for responsiveness */
@@ -1572,3 +1574,56 @@ input[type="button"]:hover {
     margin-top: 10px; /* Adjust as needed */
   }
 }
+
+/* END Search selection content*/
+
+/* START Notifications selection content*/
+
+/* Positioning the recent text */
+.recent-text {
+  position: absolute;
+  top: 100;
+  left: 0;
+}
+
+/* Positioning the clear list button */
+.btn-clear-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Positioning the user info box */
+.user-info-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 100px;
+}
+
+/* Styling the profile picture */
+.profile-pic-Notifications img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+/* Styling the username */
+.username {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .recent-text,
+  .btn-clear-list {
+    position: static;
+    margin-top: 10px; /* Adjust as needed */
+  }
+}
+
+/* END Notifications selection content*/
