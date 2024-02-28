@@ -907,8 +907,26 @@
             ></button>
           </div>
           <div class="modal-body">
-            <!-- Registration form -->
+            
             <form>
+                <input
+                placeholder="Enter your text..."
+                class="form-control me-2 input"
+                name="text"
+                type="text"
+              />
+              <button class="btn btn-watch" type="button">Search</button>
+
+                <div class="user-info-box-Messages">
+                    <div class="profile-pic-search">
+                      <img
+                        src="https://source.unsplash.com/250x250?girl"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <span class="username">AH1</span>
+                  </div>
+      
               <div class="mb-3">
                 <label for="messageInput" class="form-label">Message:</label>
                 <textarea
@@ -922,12 +940,12 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-watch"
               data-bs-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Send</button>
+            <button type="button" class="btn btn-watch">Send</button>
           </div>
         </div>
       </div>
@@ -969,6 +987,7 @@
                   />
                 </div>
                 <span class="username">AH1</span>
+                <span class="paragraphNotifications">is following you</span>
               </div>
 
               <div class="user-info-box">
@@ -979,6 +998,7 @@
                   />
                 </div>
                 <span class="username">GregPlitt</span>
+                <span class="paragraphNotifications">Liked your post</span>
               </div>
 
               <div class="user-info-box">
@@ -989,6 +1009,7 @@
                   />
                 </div>
                 <span class="username">Sam22</span>
+                <span class="paragraphNotifications">Liked your post</span>
               </div>
             </form>
           </div>
@@ -1099,27 +1120,53 @@
           <div class="modal-body">
             <!-- Registration form goes here -->
             <form>
-              <!-- Your registration form fields go here -->
+              <div class="user-info-box-Profile">
+                <div class="profile-pic-profile">
+                  <img
+                    src="https://source.unsplash.com/250x250?girl"
+                    alt="Profile Picture"
+                  />
+                </div>
+                <span class="username-profile">AH1</span>
+              </div>
+
+              <div class="user-info-box-ProfileInput">
+                <span class="post">Post: 3</span>
+                <span class="followers">Followers: 10</span>
+                <span class="following">Following: 5</span>
+              </div>
+
+              <div class="user-info-box-ProfileInput">
+                <span class="profiledescription">Profile Description</span>
+              </div>
+
+              <div class="row">
+              <div class="mb-3 col-md-4">
+                <div class="content-box" onclick="openModalContent()">
+                  <img
+                    class="content-box1"
+                    src="Images/Content1.jpg"
+                    alt="content-box logo"
+                  />
+                  <div class="paragraphContent">
+                    <p>Nowhere</p>
+                    <p>Created By: AH1</p>
+                  </div>
+                </div>
+              </div>
+              </div>
             </form>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
+            <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-primary">Profile</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <!-- <Main Content -->
-      <!--Main content here -->
-    </div>
+   
 
     <!-- Footer -->
     <footer class="footer bg-dark text-white text-center">
@@ -1183,20 +1230,18 @@
             ></button>
           </div>
           <div class="modal-body">
-            <!-- Registration form goes here -->
+            
             <form>
-              <!-- Your registration form fields go here -->
             </form>
           </div>
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-watch"
               data-bs-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Saved</button>
           </div>
         </div>
       </div>
