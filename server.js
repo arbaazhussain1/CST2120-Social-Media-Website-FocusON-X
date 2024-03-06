@@ -29,14 +29,27 @@ app.get(`/M00872279`, async (request, response) => {
     }
   });
   
-  app.post(`/M00872279`, async (request, response) => {
-    try {
-      const result = await usersCollection.insertOne(request.body);
-      console.log(result);
-      response.send({"message": "Data saved"});
-    } catch (error) {
-      console.error(error);
-      response.status(500).send("An error occurred while saving data");
+  app.post(`/M00872279/register`, async (request, response) => {
+
+      const newUser = request.body;
+      newUser.following = [];
+      console.log(newUser)
+
+    //Check to see if user exists.
+
+    //Check to see if user has a username and password
+    if(newUser.username === undefined || newUser.password === undefined){
+      response.send({"error": true, message: "Missing username and/or password"});
+    }
+    else{
+      try {
+        const result = await usersCollection.insertOne(request.body);
+        console.log(result);
+        response.send({"message": "Data saved"});
+      } catch (error) {
+        console.error(error);
+        response.status(500).send("An error occurred while saving data");
+      }
     }
   });
   
@@ -84,6 +97,11 @@ app.get(`/M00872279`, async (request, response) => {
 // app.get('/M00872279', (req, res) => {
 //     res.send({"message": "  data retrieved"});
 // });
+
+
+
+
+
 
 
 
