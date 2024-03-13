@@ -11,7 +11,6 @@
     />
     <link rel="stylesheet" href="/CSS/main.css" />
     <script src="/JavaScript/main.js"></script>
-    <script src="/JavaScript/login&register.js"></script>
 
     <title>FocusON-X</title>
 
@@ -165,7 +164,7 @@
           </div>
           <div class="modal-body">
             <!-- Registration form -->
-            <form>
+            <form action="/M00872279/register" method="POST">
               <!--User input for First Name text field -->
               <div class="text_field-sign-up">
                 <input id="firstname" type="text" required />
@@ -234,13 +233,16 @@
               </div>
               <div class="pass">Forgot Password?</div>
               <!-- Submit button for Registration-->
-              <button
+              <!-- <button
                 type="button"
                 class="btn btn-watch"
                 onclick="registerVal()"
               >
                 Register
-              </button>
+              </button> -->
+              <form action="/register" method="POST">
+                <button type="submit"  class="btn btn-watch" >Register</button>
+            </form>
             </form>
           </div>
           <div class="modal-footer">
