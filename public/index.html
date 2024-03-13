@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="/CSS/main.css" />
     <script src="/JavaScript/main.js"></script>
+    <script src="/JavaScript/loginregister.js"></script>
 
     <title>FocusON-X</title>
 
@@ -130,7 +131,7 @@
                 </li>
                 <!-- Logout link -->
                 <li>
-                  <a class="dropdown-item" href="#Log-Out"
+                  <a class="dropdown-item" href="#Log-Out" onclick="login_out()"
                     ><i class="fas fa-sign-out-alt fa-fw"></i> Log Out</a
                   >
                 </li>
@@ -164,86 +165,89 @@
           </div>
           <div class="modal-body">
             <!-- Registration form -->
-            <form action="/M00872279/register" method="POST">
-              <!--User input for First Name text field -->
-              <div class="text_field-sign-up">
-                <input id="firstname" type="text" required />
-                <span></span>
-                <label>First Name</label>
-                <!--logo for First Name -->
-                <img
-                  class="usernameimage"
-                  src="../Images/profile.png"
-                  alt="First name logo"
-                />
-              </div>
-              <!--User input for Last Name text field -->
-              <div class="text_field-sign-up">
-                <input id="lastname" type="text" required />
-                <span></span>
-                <label>Last Name</label>
-                <!--logo for Last Name -->
-                <img
-                  class="usernameimage"
-                  src="../Images/profile.png"
-                  alt="Last Name logo"
-                />
-              </div>
-              <!--User input for Username text field -->
-              <div class="text_field-sign-up">
-                <input id="username" type="text" required />
-                <span></span>
-                <label>Username</label>
-                <!-- logo for Username-->
-                <img
-                  class="usernameimage"
-                  src="../Images/profile.png"
-                  alt="Username logo"
-                />
-              </div>
-              <!--User input for Email text field -->
-              <div class="text_field-sign-up">
-                <input id="email" type="text" required />
-                <span></span>
-                <label>Email</label>
-                <!-- logo for Email-->
-                <img
-                  class="emailimage-sign-up"
-                  src="../Images/Email.png"
-                  alt="Email logo"
-                />
-              </div>
-              <!--User input for Password text field -->
-              <div class="text_field-sign-up">
-                <input id="password_register" type="password" required />
-                <span></span>
-                <label>Password</label>
-                <!-- logo for Password-->
-                <img
-                  class="passwordlogo-sign-up"
-                  src="../Images/lock.png"
-                  alt="Lock logo"
-                />
-              </div>
-              <div class="forgot-sign-up">
-                <!-- Created a checkbox for remembering the Users passwords -->
-                <label for="cb_register"
-                  ><input type="checkbox" id="cb_register" />Remember Me</label
+            <!-- <form action="/M00872279/register" method="POST"> -->
+
+            <div>
+              <form>
+                <!--User input for First Name text field -->
+                <div class="text_field-sign-up">
+                  <input id="firstname" type="text" required />
+                  <span></span>
+                  <label>First Name</label>
+                  <!--logo for First Name -->
+                  <img
+                    class="usernameimage"
+                    src="../Images/profile.png"
+                    alt="First name logo"
+                  />
+                </div>
+                <!--User input for Last Name text field -->
+                <div class="text_field-sign-up">
+                  <input id="lastname" type="text" required />
+                  <span></span>
+                  <label>Last Name</label>
+                  <!--logo for Last Name -->
+                  <img
+                    class="usernameimage"
+                    src="../Images/profile.png"
+                    alt="Last Name logo"
+                  />
+                </div>
+                <!--User input for Username text field -->
+                <div class="text_field-sign-up">
+                  <input id="username" type="text" required />
+                  <span></span>
+                  <label>Username</label>
+                  <!-- logo for Username-->
+                  <img
+                    class="usernameimage"
+                    src="../Images/profile.png"
+                    alt="Username logo"
+                  />
+                </div>
+                <!--User input for Email text field -->
+                <div class="text_field-sign-up">
+                  <input id="email" type="text" required />
+                  <span></span>
+                  <label>Email</label>
+                  <!-- logo for Email-->
+                  <img
+                    class="emailimage-sign-up"
+                    src="../Images/Email.png"
+                    alt="Email logo"
+                  />
+                </div>
+                <!--User input for Password text field -->
+                <div class="text_field-sign-up">
+                  <input id="password_register" type="password" required />
+                  <span></span>
+                  <label>Password</label>
+                  <!-- logo for Password-->
+                  <img
+                    class="passwordlogo-sign-up"
+                    src="../Images/lock.png"
+                    alt="Lock logo"
+                  />
+                </div>
+                <div class="forgot-sign-up">
+                  <!-- Created a checkbox for remembering the Users passwords -->
+                  <label for="cb_register"
+                    ><input type="checkbox" id="cb_register" />Remember
+                    Me</label
+                  >
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <!-- Submit button for Registration-->
+                <button
+                  type="button"
+                  class="btn btn-watch"
+                  onclick="register()"
                 >
-              </div>
-              <div class="pass">Forgot Password?</div>
-              <!-- Submit button for Registration-->
-              <!-- <button
-                type="button"
-                class="btn btn-watch"
-                onclick="registerVal()"
-              >
-                Register
-              </button> -->
-              <form action="/register" method="POST">
-                <button type="submit"  class="btn btn-watch" >Register</button>
-            </form>
-            </form>
+                  Register
+                </button>
+              </form>
+            </div>
+            <!-- End of registration-->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
@@ -280,7 +284,7 @@
             <form>
               <!--User input for Username text field -->
               <div class="text_field">
-                <input id="username_modal" type="text" required />
+                <input id="login_username" type="text" required />
                 <span></span>
                 <label>Username</label>
                 <!-- logo for ``username-->
@@ -292,7 +296,7 @@
               </div>
               <!--User input for Password text field -->
               <div class="text_field">
-                <input id="password_login" type="password" required />
+                <input id="login_password" type="password" required />
                 <span></span>
                 <label>Password</label>
                 <!-- logo for Password-->
@@ -310,8 +314,8 @@
               </div>
               <div class="pass">Forgot Password?</div>
               <!-- Submit button for Login-->
-              <button type="button" class="btn btn-watch" onclick="loginVal()">
-                Login-in
+              <button type="button" class="btn btn-watch" onclick="login()">
+                Login
               </button>
             </form>
           </div>
