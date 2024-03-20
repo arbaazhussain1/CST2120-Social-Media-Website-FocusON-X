@@ -8,9 +8,9 @@ async function register() {
   userObj.password = document.getElementById("password_register").value;
 
   // // Frontend validation
-  // if (!registerVal()) {
-  //   return; // Abort registration if validation fails
-  // }
+  if (!registerVal()) {
+    return; // Abort registration if validation fails
+  }
 
   // Send data to server
   try {
@@ -28,6 +28,7 @@ async function register() {
     // Redirect or show message to the user based on response
   } catch (error) {
     console.error(error);
+    console.log("Not Possible to Register Twice");
     // Handle error
   }
 }
@@ -37,9 +38,9 @@ async function login() {
   const password = document.getElementById("login_password").value;
 
   // Frontend validation
-  // if (!loginVal()) {
-  //   return; // Abort login if validation fails
-  // }
+  if (!loginVal()) {
+    return; // Abort login if validation fails
+  }
 
   // Send login data to server
   try {
@@ -54,6 +55,12 @@ async function login() {
     const data = await response.json();
     // Handle response from server
     console.log(data.message); // Log server response
+
+    if (response.ok) {
+      sessionStorage.setItem("username", username);
+      // Redirect or show message to the user based on response
+    }
+
     // Redirect or show message to the user based on response
   } catch (error) {
     console.error(error);
@@ -75,7 +82,7 @@ function registerVal() {
     alert("Please fill in all fields");
     return false;
   }
-  
+
   // Validate email format
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
@@ -86,10 +93,12 @@ function registerVal() {
   // Validate password complexity
   const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
   if (!passwordRegex.test(password)) {
-    alert("Password must contain at least 8 characters, including uppercase, lowercase, and numbers");
+    alert(
+      "Password must contain at least 8 characters, including uppercase, lowercase, and numbers"
+    );
     return false;
   }
-  
+
   // If all validations pass, return true
   return true;
 }
@@ -105,23 +114,19 @@ function loginVal() {
     return false;
   }
   // Other validation checks can be added here
-  
+
   // If all validations pass, return true
   return true;
 }
-
-
-
-
 
 async function login_out() {
   const username = document.getElementById("login_username").value;
   const password = document.getElementById("login_password").value;
 
   // Frontend validation
-  // if (!loginVal()) {
-  //   return; // Abort login if validation fails
-  // }
+  if (!loginVal()) {
+    return; // Abort login if validation fails
+  }
 
   // Send login data to server
   try {
@@ -136,6 +141,18 @@ async function login_out() {
     const data = await response.json();
     // Handle response from server
     console.log(data.message); // Log server response
+
+    // Example of retrieving the username from sessionStorage
+    const username = sessionStorage.getItem("username");
+    if (username) {
+      console.log("Logged in user:", username);
+    } else {
+      console.log("No user logged in");
+    }
+
+    // Remove user information from sessionStorage
+    sessionStorage.removeItem("username");
+
     // Redirect or show message to the user based on response
   } catch (error) {
     console.error(error);
