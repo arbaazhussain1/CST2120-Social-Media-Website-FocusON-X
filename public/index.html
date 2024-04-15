@@ -1120,7 +1120,7 @@
             <!-- Description input box -->
 
             <form>
-              <div class="Title">
+              <div class="Title" id="title" >
                 <label for="messageInput" class="form-label-Title"
                   >Title:</label
                 >
@@ -1134,7 +1134,7 @@
 
             <div>  
               <form>
-                <div class="mb-3">
+                <div class="Description" id="description" >
                   <label for="messageInput" class="form-label"
                     >Description:</label
                   >
@@ -1152,7 +1152,8 @@
             <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-watch">Create ></button>
+            <button type="button" class="btn btn-watch" onclick="postVal()"
+            >Create ></button>
           </div>
         </div>
       </div>

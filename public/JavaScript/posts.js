@@ -3,7 +3,10 @@ async function post() {
     // Retrieve user input values from HTML input elements
     userObj.username = document.getElementById("username").value;
     userObj.title = document.getElementById("title").value;
-    userObj.text = document.getElementById("text").value;
+    // userObj.text = document.getElementById("text").value;
+    // description
+    userObj.description = document.getElementById("description").value;
+
   
     // // Frontend validation
     if (!postVal()) {
@@ -36,10 +39,12 @@ async function post() {
   function postVal() {
     const username = document.getElementById("username").value;
     const title = document.getElementById("title").value;
-    const text = document.getElementById("text").value;
+    // const text = document.getElementById("text").value;
+    const description = document.getElementById("description").value;
+
   
     // Perform validation checks
-    if ( !username || !title || !text) {
+    if ( !username || !title || !description) {
       // Show error message if any field is empty
       alert("Please fill in all fields");
       return false;

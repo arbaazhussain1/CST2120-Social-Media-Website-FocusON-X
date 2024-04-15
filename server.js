@@ -132,8 +132,8 @@ app.post("/M00872279/post", async (req, res) => {
     //If missing, post.text=== undefined
 
     //Is the user logged in
-    if(req.session.username === undefined){
-      res.json({error: true, message: "Post failed; user not logged in."});
+    if (req.session.username === undefined) {
+      res.json({ error: true, message: "Post failed; user not logged in." });
       return;
     }
 
@@ -142,8 +142,10 @@ app.post("/M00872279/post", async (req, res) => {
     // Insert the posts into the database
     await postsCollection.insertOne({
       username: req.session.username,
-      text: post.text,
-      title: post.title
+      // text: post.text,
+      description: post.description,
+
+      title: post.title,
     });
 
     res.json({ message: " post successfully" });
@@ -153,11 +155,21 @@ app.post("/M00872279/post", async (req, res) => {
   }
 });
 
-
-
 // date,
-      // videoURL,
-      // title,
-      // imageURL,
-      // comments,
-      // likes
+// videoURL,
+// title,
+// imageURL,
+// comments,
+// likes
+
+app.get("/M00872279/post", async (req, res) => {
+  try {
+    // Assuming you have some way to retrieve posts from the database
+    const posts = await postsCollection.find({}).toArray();
+
+    res.json({ posts, message: " post successfully has been get" });
+  } catch (error) {
+    console.error("Error fetching posts:", error);
+    res.status(500).json({ error: "An error occurred fetching posts" });
+  }
+});

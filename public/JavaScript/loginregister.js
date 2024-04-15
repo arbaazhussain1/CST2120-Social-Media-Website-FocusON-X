@@ -143,16 +143,21 @@ async function login_out() {
     console.log(data.message); // Log server response
 
     // Example of retrieving the username from sessionStorage
-    const username = sessionStorage.getItem("username");
-    if (username) {
-      console.log("Logged in user:", username);
-    } else {
-      console.log("No user logged in");
-    }
+    // const username = sessionStorage.getItem("username");
+    // if (username) {
+    //   console.log("Logged in user:", username);
+    // } else {
+    //   console.log("No user logged in");
+    // }
 
     // Remove user information from sessionStorage
-    sessionStorage.removeItem("username");
+    // sessionStorage.removeItem("username");
 
+     // Delete relevant cookies
+     if (document.cookie != null) {
+     document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; // Replace "username" with your cookie name
+    //  console.log("logged out")
+     }
     // Redirect or show message to the user based on response
   } catch (error) {
     console.error(error);
