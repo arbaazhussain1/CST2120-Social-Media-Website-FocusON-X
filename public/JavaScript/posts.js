@@ -5,7 +5,7 @@ async function post() {
     userObj.title = document.getElementById("title").value;
     // userObj.text = document.getElementById("text").value;
     // description
-    userObj.description = document.getElementById("description").value;
+    userObj.text = document.querySelector("#text").value;
 
   
     // // Frontend validation
@@ -40,11 +40,11 @@ async function post() {
     const username = document.getElementById("username").value;
     const title = document.getElementById("title").value;
     // const text = document.getElementById("text").value;
-    const description = document.getElementById("description").value;
+    const text = document.querySelector("#text").value;
 
   
     // Perform validation checks
-    if ( !username || !title || !description) {
+    if ( !username || !title || !text) {
       // Show error message if any field is empty
       alert("Please fill in all fields");
       return false;

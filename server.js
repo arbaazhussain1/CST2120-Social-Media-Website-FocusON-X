@@ -143,10 +143,12 @@ app.post("/M00872279/post", async (req, res) => {
     await postsCollection.insertOne({
       username: req.session.username,
       // text: post.text,
-      description: post.description,
+      text: post.text,
 
       title: post.title,
     });
+
+    // console.log(post.text);
 
     res.json({ message: " post successfully" });
   } catch (error) {
