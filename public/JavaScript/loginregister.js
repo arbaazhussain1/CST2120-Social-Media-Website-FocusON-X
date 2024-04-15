@@ -25,6 +25,8 @@ async function register() {
     const data = await response.json();
     // Handle response from server
     console.log(data.message); // Log server response
+    alert("Registration successful"); // Add alert for registration success
+
     // Redirect or show message to the user based on response
   } catch (error) {
     console.error(error);
@@ -55,6 +57,7 @@ async function login() {
     const data = await response.json();
     // Handle response from server
     console.log(data.message); // Log server response
+    alert("Login successful"); // Add alert for login success
 
     if (response.ok) {
       sessionStorage.setItem("username", username);
@@ -141,6 +144,7 @@ async function login_out() {
     const data = await response.json();
     // Handle response from server
     console.log(data.message); // Log server response
+    alert("Logout successful"); // Add alert for logout success
 
     // Example of retrieving the username from sessionStorage
     // const username = sessionStorage.getItem("username");
@@ -153,11 +157,12 @@ async function login_out() {
     // Remove user information from sessionStorage
     // sessionStorage.removeItem("username");
 
-     // Delete relevant cookies
-     if (document.cookie != null) {
-     document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; // Replace "username" with your cookie name
-    //  console.log("logged out")
-     }
+    // Delete relevant cookies
+    if (document.cookie != null) {
+      document.cookie =
+        "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; // Replace "username" with your cookie name
+      //  console.log("logged out")
+    }
     // Redirect or show message to the user based on response
   } catch (error) {
     console.error(error);
