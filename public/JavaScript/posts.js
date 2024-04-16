@@ -12,7 +12,8 @@ async function post() {
     if (!postVal()) {
       return; // Abort post if validation fails
     }
-  
+    console.log(userObj); // Log userObj data
+
     // Send data to server
     try {
       const response = await fetch("/M00872279/post", {
@@ -27,12 +28,39 @@ async function post() {
       // Handle response from server
       console.log(data.message); // Log server response
       // Redirect or show message to the user based on response
+      
     } catch (error) {
       console.error(error);
       console.log("Not Possible to Same Post Twice");
       // Handle error
     }
   }
+
+  // Function to display the selected file name
+function displayFileName(input) {
+  const fileName = input.files[0].name;
+  const uploadSpan = input.parentElement.querySelector(".upload span");
+  uploadSpan.textContent = fileName;
+}
+
+  // Function to move the uploaded file to the destination folder
+function moveFileToDestination() {
+    const mv = require('mv');
+
+    // Assuming file is saved to 'uploads' folder
+    const uploadedFilePath = 'path/to/uploaded/file'; // Replace with the actual path to the uploaded file
+    const destinationFolderPath = 'path/to/destination/folder'; // Replace with the desired destination folder
+
+    mv(uploadedFilePath, `${destinationFolderPath}/${file.name}`, function(err) {
+        if (err) {
+            console.error(err);
+            // Handle error
+        } else {
+            console.log('File moved successfully');
+            // Continue with further processing or show success message
+        }
+    });
+}
   
   
   // Frontend validation functions
@@ -41,6 +69,7 @@ async function post() {
     const title = document.getElementById("title").value;
     // const text = document.getElementById("text").value;
     const text = document.querySelector("#text").value;
+    console.log(username, title, text); // Log input field values
 
   
     // Perform validation checks
