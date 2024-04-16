@@ -76,25 +76,41 @@ function displayFileName(input) {
   uploadSpan.textContent = fileName;
 }
 
-  // Function to move the uploaded file to the destination folder
-function moveFileToDestination() {
-    const mv = require('mv');
+//   // Function to move the uploaded file to the destination folder
+// function moveFileToDestination() {
+//     const mv = require('mv');
 
-    // Assuming file is saved to 'uploads' folder
-    const uploadedFilePath = 'path/to/uploaded/file'; // Replace with the actual path to the uploaded file
-    const destinationFolderPath = 'path/to/destination/folder'; // Replace with the desired destination folder
+//     // Assuming file is saved to 'uploads' folder
+//     const destinationFolderPath = '/CST2120-Social-Media-Website-FocusON-X/uploads'; // Replace with the desired destination folder
+//     const uploadedFilePath = '/CST2120-Social-Media-Website-FocusON-X/uploads'; // Replace with the actual path to the uploaded file
 
-    mv(uploadedFilePath, `${destinationFolderPath}/${file.name}`, function(err) {
-        if (err) {
-            console.error(err);
-            // Handle error
-        } else {
-            console.log('File moved successfully');
-            // Continue with further processing or show success message
-        }
-    });
-}
+//     mv(uploadedFilePath, `${destinationFolderPath}/${file.name}`, function(err) {
+//         if (err) {
+//             console.error(err);
+//             // Handle error
+//         } else {
+//             console.log('File moved successfully');
+//             // Continue with further processing or show success message
+//         }
+//     });
+// }
   
+function moveFileToDestination(destinationFolderPath, fileName) {
+  const mv = require('mv');
+
+  const uploadedFilePath = '/path/to/uploaded/file'; // Specify the current path of the uploaded file
+
+  mv(uploadedFilePath, `${destinationFolderPath}/${fileName}`, function(err) {
+      if (err) {
+          console.error(err);
+          // Handle error
+      } else {
+          console.log('File moved successfully');
+          // Continue with further processing or show success message
+      }
+  });
+}
+
   
   // Frontend validation functions
   function postVal() {
