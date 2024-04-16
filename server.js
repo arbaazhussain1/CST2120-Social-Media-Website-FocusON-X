@@ -146,6 +146,8 @@ app.post("/M00872279/post", async (req, res) => {
       text: post.text,
 
       title: post.title,
+
+      file: post.file,
     });
 
     // console.log(post.text);
