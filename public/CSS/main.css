@@ -186,7 +186,6 @@ a.sidebar-link {
   }
 }
 
-
 /* Not Display bootstrap class */
 .modal-backdrop {
   display: none;
@@ -233,6 +232,18 @@ a.sidebar-link {
 .close:focus {
   color: #e74c3c;
 }
+.register-link-wrapper {
+  color: white;
+}
+
+.register-link {
+  color: white; /* Ensure link text is white */
+  text-decoration: none; /* Remove default underline */
+}
+
+.register-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
 
 /* Modal Styles for Pop up Login-in  */
 .modal-title-Login-in {
@@ -274,6 +285,19 @@ a.sidebar-link {
 .close:hover,
 .close:focus {
   color: #e74c3c;
+}
+
+.login-link-wrapper {
+  color: white;
+}
+
+.login-link {
+  color: white;
+  text-decoration: none; /* Remove default underline */
+}
+
+.login-link:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 /* Modal Styles for Pop up Setting */
@@ -600,13 +624,13 @@ a.sidebar-link {
   fill: #e8e8e8;
 }
 
-.custum-file-upload .text {
+.custum-file-upload .upload {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.custum-file-upload .text span {
+.custum-file-upload .upload span {
   font-weight: 400;
   color: #e8e8e8;
 }
@@ -1147,9 +1171,7 @@ input[type="button"]:hover {
   }
 }
 
-
 /*  Switch button styling End  */
-
 
 /* Content box styling  */
 .content-box {

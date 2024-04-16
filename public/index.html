@@ -14,7 +14,6 @@
     <script src="/JavaScript/loginregister.js"></script>
     <script src="/JavaScript/posts.js"></script>
 
-
     <title>FocusON-X</title>
 
     <!-- Bootstrap JavaScript -->
@@ -248,6 +247,18 @@
                   Register
                 </button>
               </form>
+              <div class="login-link-wrapper">
+                <p>
+                  Already have an account?
+                  <a
+                    href="#Login-In"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalLogin-In"
+                    class="login-link"
+                    >Login In</a
+                  >
+                </p>
+              </div>
             </div>
             <!-- End of registration-->
           </div>
@@ -320,6 +331,18 @@
                 Login
               </button>
             </form>
+            <div class="register-link-wrapper">
+              <p>
+                Don't have an account?
+                <a
+                  href="#Register"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRegister"
+                  class="register-link"
+                  >Register</a
+                >
+              </p>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
@@ -1111,16 +1134,16 @@
                     </g>
                   </svg>
                 </div>
-                <div class="text">
+                <div class="upload">
                   <span>Click to Upload Image / Video</span>
                 </div>
-                <input id="file" type="file" />
+                <input id="file" type="file" accept="image/*, video/*" />
               </div>
             </form>
             <!-- Description input box -->
 
             <form>
-              <div class="Title" id="title" >
+              <div class="Title" id="title">
                 <label for="messageInput" class="form-label-Title"
                   >Title:</label
                 >
@@ -1132,12 +1155,10 @@
               </div>
             </form>
 
-            <div>  
+            <div>
               <form>
-                <div class="text" id="text" >
-                  <label for="messageInput" class="form-label"
-                    >text</label
-                  >
+                <div class="text" id="text">
+                  <label for="messageInput" class="form-label">text</label>
                   <textarea
                     class="form-control"
                     id="messageInput2"
@@ -1146,14 +1167,14 @@
                 </div>
               </form>
             </div>
-
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-watch" data-bs-dismiss="modal">
               Close
             </button>
-            <button type="button" class="btn btn-watch" onclick="postVal()"
-            >Create ></button>
+            <button type="button" class="btn btn-watch" onclick="postVal()">
+              Create >
+            </button>
           </div>
         </div>
       </div>
