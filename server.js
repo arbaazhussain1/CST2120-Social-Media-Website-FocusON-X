@@ -159,13 +159,6 @@ app.post("/M00872279/post", async (req, res) => {
   }
 });
 
-// date,
-// videoURL,
-// title,
-// imageURL,
-// comments,
-// likes
-
 app.get("/M00872279/post", async (req, res) => {
   try {
     // Assuming you have some way to retrieve posts from the database

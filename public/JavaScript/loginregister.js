@@ -146,17 +146,6 @@ async function login_out() {
     console.log(data.message); // Log server response
     alert("Logout successful"); // Add alert for logout success
 
-    // Example of retrieving the username from sessionStorage
-    // const username = sessionStorage.getItem("username");
-    // if (username) {
-    //   console.log("Logged in user:", username);
-    // } else {
-    //   console.log("No user logged in");
-    // }
-
-    // Remove user information from sessionStorage
-    // sessionStorage.removeItem("username");
-
     // Delete relevant cookies
     if (document.cookie != null) {
       document.cookie =

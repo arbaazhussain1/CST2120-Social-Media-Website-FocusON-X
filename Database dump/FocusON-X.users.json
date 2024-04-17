@@ -1,0 +1,86 @@
+[{
+  "_id": {
+    "$oid": "65a7b0390790d68e7e9cc036"
+  },
+  "firstname": "dBob",
+  "lastname": "Jones",
+  "username": "BobJ1",
+  "password": "Bob@J",
+  "email": "b@j.com",
+  "phone": "07577 783451",
+  "numberofpost": "5",
+  "followers": [
+    "max22",
+    "ninja1"
+  ],
+  "following": [
+    "andyatcool",
+    "jand100"
+  ],
+  "website": "www.focuson-x.com",
+  "bio": " Texts that is for the user to describe there our profile"
+},
+{
+  "_id": {
+    "$oid": "65ba32fcbf8850d99fa2adf5"
+  },
+  "firstname": "Arbaaz",
+  "lastname": "Hussain",
+  "username": "Arbaaz1",
+  "password": "Arbaaz123",
+  "email": "arbaaz@email.com",
+  "phone": "07522 985211",
+  "numberofpost": "10",
+  "followers": [
+    "BobJ1",
+    "Sam11"
+  ],
+  "following": [
+    "joey55",
+    "jay1000"
+  ],
+  "website": "www.arbaaz.com",
+  "bio": " Hi this is Arbaaz profile"
+},
+{
+  "_id": {
+    "$oid": "65df4fb31929c5d14aeac17b"
+  },
+  "firstname": "Arbaaz",
+  "lastname": "Hussain",
+  "username": "M00872279",
+  "password": "Arbaaz500",
+  "studentID": "M00872279",
+  "email": "ah2010@live.mdx.ac.uk",
+  "phone": "07522 985211"
+},
+{
+  "_id": {
+    "$oid": "65f187f4ce7cb723fe5eb79a"
+  },
+  "firstname": "Alice",
+  "lastname": "Smith",
+  "username": "asmith",
+  "email": "alice.smith@example.com",
+  "password": "SecurePass123"
+},
+{
+  "_id": {
+    "$oid": "661fa1ea094fd55ae43add7c"
+  },
+  "firstname": "Jay",
+  "lastname": "Kim",
+  "username": "JayKim",
+  "email": "jay@gmail.com",
+  "password": "JayKimcool123"
+},
+{
+  "_id": {
+    "$oid": "661fc5a8dbe6f08d7fa432fe"
+  },
+  "firstname": "Arbaaz",
+  "lastname": "Hussain",
+  "username": "Arbaaz200",
+  "email": "ah@email.com",
+  "password": "qwertyuiopA123"
+}]

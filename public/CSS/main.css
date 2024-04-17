@@ -601,7 +601,6 @@ a.sidebar-link {
   width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: space-between;
   gap: 20px;
   cursor: pointer;
   align-items: center;
@@ -670,7 +669,7 @@ a.sidebar-link {
 }
 
 .btn-watch:active {
-  scale: 0.92;
+  transform: scale(0.92);
 }
 
 .btn-watch:hover {
@@ -1470,7 +1469,7 @@ input[type="button"]:hover {
 /* Positioning the recent text */
 .recent-text {
   position: absolute;
-  top: 100;
+  top: 100px;
   left: 0;
 }
 
@@ -1524,7 +1523,7 @@ input[type="button"]:hover {
 /* Positioning the recent text */
 .recent-text {
   position: absolute;
-  top: 100;
+  top: 100px;
   left: 0;
 }
 
